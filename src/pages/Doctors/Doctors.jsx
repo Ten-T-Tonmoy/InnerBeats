@@ -1,5 +1,10 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { FaMapLocationDot } from "react-icons/fa6";
+import { FaUserDoctor } from "react-icons/fa6";
+import { MdOutlineAccessTime } from "react-icons/md";
+import { PiHospital } from "react-icons/pi";
+import { IoCallOutline } from "react-icons/io5";
 
 const TextAnimation = () => {
   return (
@@ -32,25 +37,35 @@ const Doctors = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mb-4 gap-4 w-full  justifyitems-center ">
+      <div
+        className="grid text-[.9rem] grid-cols-1 
+ md:grid-cols-2 mb-4 gap-4 w-full   justify-items-center "
+      >
         <div
           className="h-full p-3 w-[90vw] md:w-[40vw]  bg-gradient-to-r from-primary via-secondary/10
-           to-secondary/20 text-black rounded-md  justify-self-center"
+           to-secondary/20 text-black rounded-md   justify-self-center"
         >
-          <h2 className="text-[1.7rem] font-black mb-2">
-            Dr. Md. Shohedul Alam
-          </h2>
+          <div className="flex justify-center">
+            <FaUserDoctor className="text-[1.5rem] relative top-2 mx-1 lg:mx-4" />
+            <h2 className="text-[1.6rem] font-black mb-2">
+              Dr. Md. Shohedul Alam
+            </h2>
+          </div>
           <p>
+            <PiHospital className="inline mx-1" />
             <strong>Chamber:</strong> Islami Bank Hospital, Rajshahi
           </p>
           <p>
+            <FaMapLocationDot className="inline mx-1 " />
             <strong>Address:</strong> Medical Mor, Laxmipur, Rajshahi – 6000
           </p>
           <p>
+            <MdOutlineAccessTime className="inline mx-1" />
             <strong>Visiting Time:</strong> 2 pm to 5.30 pm (Closed: Thu &
             Friday)
           </p>
           <p>
+            <IoCallOutline className="inline mx-1" />
             <strong>Appointment:</strong> +8801711340582
           </p>
           <div className="mt-2 relative lg:top-4">
@@ -74,21 +89,28 @@ const Doctors = () => {
           className="h-full p-3 w-[90vw] md:w-[40vw] bg-gradient-to-l justify-self-center
          from-primary via-secondary/10 to-secondary/20 text-black rounded-md "
         >
-          <h2 className="text-[1.7rem] font-black mb-2">
-            Dr. Abdullah Al Mamun
-          </h2>
+          <div className="flex justify-center">
+            <FaUserDoctor className="text-[1.5rem] relative top-2 mx-1 lg:mx-4" />
+            <h2 className="text-[1.6rem] font-black mb-2">
+              Dr. Abdullah Al Mamun
+            </h2>
+          </div>
           <p>
+            <PiHospital className="inline mx-1" />
             <strong>Chamber:</strong> Medipath Diagnostic Complex, Rajshahi
           </p>
           <p>
+            <FaMapLocationDot className="inline mx-1 " />
             <strong>Address:</strong> Shuvecca View, Greater Road, Laxmipur,
             Kajihata, Rajshahi
           </p>
           <p>
+            <MdOutlineAccessTime className="inline mx-1" />
             <strong>Visiting Time:</strong> 2 pm to 5.30 pm (Closed: Thu &
             Friday)
           </p>
           <p>
+            <IoCallOutline className="inline mx-1" />
             <strong>Appointment:</strong> +8801712685297
           </p>
           <div className="mt-2">
