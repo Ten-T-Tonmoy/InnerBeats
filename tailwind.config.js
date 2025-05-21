@@ -12,6 +12,7 @@ export default {
         yellowtail: ['"Yellowtail"', "cursive"],
         dancing: ['"Dancing Script"', "cursive"],
         great: ['"Great Vibes"', "cursive"],
+        inter: ['"Inter"', "sans-serif"],
       },
     },
   },

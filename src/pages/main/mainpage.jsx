@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
-
 const page = () => {
   return (
     <div>
@@ -16,6 +15,11 @@ const page = () => {
         <Link to="/about">
           <button className="bg-red-400 p-2 text-white rounded-md">
             About Us
+          </button>
+        </Link>
+        <Link to="/doctors">
+          <button className="bg-pink-400 p-2 text-white rounded-md">
+            Psychs
           </button>
         </Link>
         <button className="bg-blue-400 p-2 text-white rounded-md">
