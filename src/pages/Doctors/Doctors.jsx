@@ -4,6 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 const TextAnimation = () => {
   return (
     <Typewriter
+      className="transition-all duration-200 ease-in-out"
       words={["Trusted Psychiatric Help ....."]}
       loop={0}
       cursor
@@ -22,11 +23,11 @@ const Doctors = () => {
         <p className="text-[1.4rem] flex  my-4 md:justify-center  font-[1000] ">
           <TextAnimation />
         </p>
-        <p className="my-4">
+        <p className="my-4 md:px-[7vw]">
           For those who need professional mental care, here are some verified
           Psychiatric chambers:
         </p>
-        <p className="">
+        <p className="md:px-[7vw] md:mb-4">
           ( <i> Information may vary, please call before visiting </i>)
         </p>
       </div>
@@ -52,7 +53,7 @@ const Doctors = () => {
           <p>
             <strong>Appointment:</strong> +8801711340582
           </p>
-          <div className="mt-2 relative lg:top-6">
+          <div className="mt-2 relative lg:top-4">
             <iframe
               src={
                 "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1145.5858275089574!2d88.58215490866054!3d24.371874411004256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbef1d895bd4d5%3A0x4eb18177fbc1e8e2!2sIslami%20Bank%20Medical%20College%20Hospital%2C%20Rajshahi!5e0!3m2!1sen!2sbd!4v1747845473511!5m2!1sen!2sbd"
