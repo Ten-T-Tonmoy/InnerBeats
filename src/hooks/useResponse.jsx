@@ -1,4 +1,4 @@
-import { response } from "../utils/dummyDB";
+import { response } from "../utils/responseDb";
 
 export const getResult = ({ emotion, reasonIdx }) => {
   return response[emotion]?.[reasonIdx];

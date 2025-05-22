@@ -15,13 +15,13 @@ import { PiSmileyNervousBold as Scared } from "react-icons/pi";
 
 //logic imports and shits
 
-import { request, response } from "../../utils/dummyDB";
+import { request } from "../../utils/requestDb";
 import { getResult } from "../../hooks/useResponse";
 
 export default function page() {
   //set back to empty and false asap
-  const [emotion, setEmotion] = useState("Angry");
-  const [openPop, setOpenPop] = useState(true);
+  const [emotion, setEmotion] = useState("");
+  const [openPop, setOpenPop] = useState(false);
   const [response, setResponse] = useState({
     advice: {
       heading: "",
@@ -201,14 +201,28 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
           <div
             className="text-[1.7rem] hover:bg-white hover:text-red-600 
           rounded-full cursor-pointer active:scale-90"
-            onClick={() => setOpenPop(false)}
+            onClick={() => {
+              setOpenPop(false);
+              setResponse({
+                advice: {
+                  heading: "",
+                  content: "",
+                },
+                quote: {
+                  content: "",
+                  writer: "",
+                },
+                bgCode: "",
+                songUrl: "",
+                todo: [""],
+              });
+            }}
           >
             <IoMdClose />
           </div>
         </div>
         {/**content goes here request part */}
-        <div className="text-[3rem]">hi</div>
-        <div className="flex flex-col gap-1 items-center ">
+        <div className="flex flex-col gap-1 items-center py-3 ">
           {response.bgCode !== "" ? (
             <div>response exists</div>
           ) : (
