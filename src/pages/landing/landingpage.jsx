@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Hero from "./Hero";
 import Bottom from "./Bottom";
@@ -13,15 +13,42 @@ import { PiSmileySadLight as Regret1 } from "react-icons/pi"; //regret
 import { HiOutlineEmojiSad as Regret2 } from "react-icons/hi";
 import { PiSmileyNervousBold as Scared } from "react-icons/pi";
 
-const page = () => {
+//logic imports and shits
+
+import { request, response } from "../../utils/dummyDB";
+import { getResult } from "../../hooks/useResponse";
+
+export default function page() {
   //set back to empty and false asap
-  const [emotion, setEmotion] = useState("Happy");
+  const [emotion, setEmotion] = useState("Angry");
   const [openPop, setOpenPop] = useState(true);
-  const [reason, setReason] = useState("");
+  const [response, setResponse] = useState({
+    advice: {
+      heading: "",
+      content: "",
+    },
+    quote: {
+      content: "",
+      writer: "",
+    },
+    bgCode: "",
+    songUrl: "", //this will be youtube code to iframe
+    todo: [""],
+  });
+
+  //since state change is asynchronus so yeah
+  useEffect(() => {
+    console.log("New response:", response);
+  }, [response]);
   return (
     <div className="bg-primary flex flex-col items-center">
       {openPop && (
-        <PopUp emotion={emotion} setOpenPop={(val) => setOpenPop(val)} />
+        <PopUp
+          emotion={emotion}
+          response={response}
+          setResponse={(val) => setResponse(val)}
+          setOpenPop={(val) => setOpenPop(val)}
+        />
       )}
       <div className="flex flex-col py-5 items-center justify-center font-semibold text-slate-700">
         <TypingText />
@@ -105,7 +132,7 @@ const page = () => {
       <Bottom />
     </div>
   );
-};
+}
 
 const TypingText = () => {
   return (
@@ -124,7 +151,7 @@ const TypingText = () => {
   );
 };
 
-const PopUp = ({ emotion, setOpenPop }) => {
+const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
   return (
     <div
       className={`
@@ -134,9 +161,9 @@ const PopUp = ({ emotion, setOpenPop }) => {
     `}
     >
       <div
-        className={`relative w-[80vw] md:w-[55vw] overflow-hidden rounded-md  border-b-8
-         
-       backdrop-blur-lg bg-clip-padding bg-opacity-0 h-[60vh]
+        className={`relative w-[85vw] md:w-[50vw] overflow-hidden rounded-md  border-b-8
+         overflow-y-scroll scrollbar-hide h-[75vh]
+       backdrop-blur-lg bg-clip-padding bg-opacity-0  md:h-[60vh]
        ${
          emotion === "Angry"
            ? " border-red-600 "
@@ -147,12 +174,12 @@ const PopUp = ({ emotion, setOpenPop }) => {
            : emotion === "Happy"
            ? " border-blue-600 "
            : emotion === "Lost"
-           ? " border-stone-600 "
+           ? " border-stone-900 "
            : ""
        }`}
       >
         <div
-          className={` bg-white text-white py-2 px-4
+          className={` text-white py-2 px-4
             flex justify-between items-center
 
           ${
@@ -163,7 +190,7 @@ const PopUp = ({ emotion, setOpenPop }) => {
               : emotion === "Scared"
               ? "bg-green-600"
               : emotion === "Happy"
-              ? "bg-blue-500"
+              ? "bg-blue-600"
               : emotion === "Lost"
               ? "bg-stone-900"
               : ""
@@ -178,6 +205,29 @@ const PopUp = ({ emotion, setOpenPop }) => {
           >
             <IoMdClose />
           </div>
+        </div>
+        {/**content goes here request part */}
+        <div className="text-[3rem]">hi</div>
+        <div className="flex flex-col gap-1 items-center ">
+          {response.bgCode !== "" ? (
+            <div>response exists</div>
+          ) : (
+            request.emotions
+              .find((val) => val.type === emotion)
+              ?.reasons.map((reason, idx) => (
+                <div
+                  onClick={() => {
+                    setResponse(getResult({ emotion, reasonIdx: idx }));
+                  }}
+                  key={idx}
+                  className=" w-[90%]
+            cursor-pointer py-1 px-2 text-white bg-red-400 bg-opacity-50 
+            rounded-sm hover:scale-105"
+                >
+                  {reason}
+                </div>
+              ))
+          )}
         </div>
       </div>
     </div>
@@ -210,5 +260,3 @@ const InputBox = ({ emotion, openSesame, setEmotion }) => {
     </div>
   );
 };
-
-export default page;

@@ -10,7 +10,7 @@
     "autoprefixer": "^10.x.x",
     "postcss": "^8.x.x",
     "tailwindcss": "^3.x.x",
-    "vite": "^4.x.x"
+    "vite": "^6.3.5"
   },
   "dependencies": {
     "axios": "^1.7.9",
