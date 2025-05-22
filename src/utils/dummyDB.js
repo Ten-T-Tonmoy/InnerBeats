@@ -1,15 +1,8 @@
 const request = {
-  emotions: [
-    sad:[
-        "someone hurted",
-        "lost someone ",
-        "something bad happened"
-    ],
-    angry:[
-        "someone betrayed",
-        "missed something you deserved",
-    ]
-  ],
+  emotions: {
+    sad: ["someone hurted", "lost someone ", "something bad happened"],
+    angry: ["someone betrayed", "missed something you deserved"],
+  },
   reason,
 };
 
