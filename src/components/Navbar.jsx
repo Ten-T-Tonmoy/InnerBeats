@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-primary relative">
-      <div className="flex items-center justify-center relative pb-3">
+      <div className="flex items-center justify-center relative ">
         {/* nav menu bar  */}
         <div
           className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500

@@ -1,5 +1,8 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import Hero from "./Hero";
+import Bottom from "./Bottom";
+//icons here
 import { FaRegFaceSadCry as Sad1 } from "react-icons/fa6";
 import { FaRegFaceAngry as Angry } from "react-icons/fa6";
 import { IoHappyOutline as Happy } from "react-icons/io5";
@@ -11,11 +14,10 @@ import { PiSmileyNervousBold as Scared } from "react-icons/pi";
 const page = () => {
   return (
     <div className="bg-primary flex flex-col items-center">
-      <div className="flex flex-col py-3 items-center justify-center font-semibold text-slate-700">
-        <h1>Let your heart speak</h1>
-
+      <div className="flex flex-col py-5 items-center justify-center font-semibold text-slate-700">
         <TypingText />
       </div>
+      <Hero />
       <div>
         <h1
           className="text-center font-extrabold text-[1.2rem] text-slate-950
@@ -23,10 +25,10 @@ const page = () => {
         >
           How are you feeling today?
         </h1>
-        <div className="flex gap-[1px] w-full justify-between md:justify-center md:gap-4 p-2">
+        <div className="flex  gap-[1px] w-full justify-center md:justify-center md:gap-2 p-2">
           <div
-            className="border-2 border-red-400  text-red-600 py-2 px-4 text-[1.8rem] rounded-md 
-          hover:bg-red-400  justify-center items-center flex flex-col cursor-pointer hover:text-white
+            className="border-2 border-red-600  text-red-600 py-2 px-4 text-[1.8rem] rounded-md 
+          hover:bg-red-600  justify-center items-center flex flex-col cursor-pointer hover:text-white
           transition-all duration-200 ease-in-out active:scale-95 "
           >
             <h1 className=" text-[1rem]">Angry</h1>
@@ -42,8 +44,8 @@ const page = () => {
             <Regret2 />
           </div>
           <div
-            className="border-2 border-blue-400  text-blue-600 py-2 px-4 text-[1.8rem] rounded-md 
-          hover:bg-blue-400 justify-center items-center flex flex-col cursor-pointer hover:text-white
+            className="border-2 border-blue-600  text-blue-600 py-2 px-4 text-[1.8rem] rounded-md 
+          hover:bg-blue-600 justify-center items-center flex flex-col cursor-pointer hover:text-white
           transition-all duration-200 ease-in-out active:scale-95"
           >
             <h1 className=" text-[1rem]">Happy</h1>
@@ -51,8 +53,8 @@ const page = () => {
             <Happy />
           </div>
           <div
-            className="border-2 border-slate-400  text-slate-600 py-2 px-4 text-[1.8rem] rounded-md 
-          hover:bg-slate-400 justify-center items-center flex flex-col cursor-pointer hover:text-white
+            className="border-2 border-slate-600  text-slate-600 py-2 px-4 text-[1.8rem] rounded-md 
+          hover:bg-slate-600 justify-center items-center flex flex-col cursor-pointer hover:text-white
           transition-all duration-200 ease-in-out active:scale-95"
           >
             <h1 className=" text-[1rem]">Sad</h1>
@@ -60,8 +62,8 @@ const page = () => {
             <Sad2 />
           </div>
           <div
-            className="border-2 border-green-400  text-green-600 py-2 px-4 text-[1.8rem] rounded-md 
-          hover:bg-green-400 justify-center items-center flex flex-col cursor-pointer hover:text-white
+            className="border-2 border-green-600  text-green-600 py-2 px-4 text-[1.8rem] rounded-md 
+          hover:bg-green-600 justify-center items-center flex flex-col cursor-pointer hover:text-white
           transition-all duration-200 ease-in-out active:scale-95"
           >
             <h1 className=" text-[1rem]">Scared</h1>
@@ -71,6 +73,7 @@ const page = () => {
         </div>
       </div>
       <InputBox />
+      <Bottom />
     </div>
   );
 };
@@ -80,10 +83,10 @@ const TypingText = () => {
     <div>
       <Typewriter
         className="transition-all duration-200 ease-in-out"
-        words={["We are Listening 💖💗💝"]}
+        words={["Let your Heart speak ......."]}
         loop={0}
         cursor
-        cursorStyle="█"
+        cursorStyle="|"
         typeSpeed={70}
         deleteSpeed={40}
         delaySpeed={1500}

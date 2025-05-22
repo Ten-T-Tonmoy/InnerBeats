@@ -8,7 +8,7 @@ const Footer = () => {
       class="bg-[#222222] text-white 
      py-8 px-4 space-y-2  flex-col  text-sm sm:text-base"
     >
-      <div className="md:px-[10vw]">
+      <div className="md:px-[10vw] lg:px-[25vw] md:py-4">
         <p
           className="cursor-pointer hover:text-secondary 
         hover:underline transition flex gap-1 mb-1"

@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <div className="gap-4 flex  flex-col">
         <Routes>
@@ -20,7 +20,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
