@@ -26,7 +26,7 @@ const Typing = () => {
 const Hero = () => {
   return (
     <div
-      className="flex md:flex-row items-center left-[7vw] sm:left-0
+      className="flex md:flex-row items-center left-[7vw] 
      justify-center w-full md:w-[90vw] mx-auto relative lg:left-[7vw]"
     >
       {/* text part heere */}

@@ -18,6 +18,9 @@ import { PiSmileyNervousBold as Scared } from "react-icons/pi";
 import { request } from "../../utils/requestDb";
 import { getResult } from "../../hooks/useResponse";
 
+//image imports
+import quotebg1 from "../../assets/quotebg/quotebg1.png";
+
 export default function page() {
   //set back to empty and false asap
   const [emotion, setEmotion] = useState("");
@@ -162,7 +165,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
     >
       <div
         className={`relative w-[85vw] md:w-[50vw] overflow-hidden rounded-md  border-b-8
-         overflow-y-scroll scrollbar-hide h-[75vh]
+         overflow-y-scroll scrollbar-custom h-[75vh]
        backdrop-blur-lg bg-clip-padding bg-opacity-0  md:h-[60vh]
        ${
          emotion === "Angry"
@@ -200,7 +203,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
           <p>What made you {emotion} ?</p>
           <div
             className="text-[1.7rem] hover:bg-white hover:text-red-600 
-          rounded-full cursor-pointer active:scale-90"
+          rounded-full cursor-pointer active:scale-90 "
             onClick={() => {
               setOpenPop(false);
               setResponse({
@@ -222,9 +225,9 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
           </div>
         </div>
         {/**content goes here request part */}
-        <div className="flex flex-col gap-1 items-center py-3 ">
+        <div className="flex flex-col gap-1 items-center   py-3 ">
           {response.bgCode !== "" ? (
-            <div>response exists</div>
+            <ResponseLayout emotion={emotion} response={response} />
           ) : (
             request.emotions
               .find((val) => val.type === emotion)
@@ -234,14 +237,152 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
                     setResponse(getResult({ emotion, reasonIdx: idx }));
                   }}
                   key={idx}
-                  className=" w-[90%]
-            cursor-pointer py-1 px-2 text-white bg-red-400 bg-opacity-50 
-            rounded-sm hover:scale-105"
+                  className={` w-[90%]
+            cursor-pointer py-1 px-2 text-white  bg-opacity-50
+            rounded-md hover:scale-105 hover:bg-opacity-100
+            ${
+              emotion === "Angry"
+                ? "bg-red-600"
+                : emotion === "Sad"
+                ? "bg-slate-600"
+                : emotion === "Scared"
+                ? "bg-green-600"
+                : emotion === "Happy"
+                ? "bg-blue-600"
+                : emotion === "Lost"
+                ? "bg-stone-900"
+                : ""
+            }`}
                 >
                   {reason}
                 </div>
               ))
           )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/**
+ * {
+      advice: {
+        heading: "Feeling low?",
+        content: "It's okay to cry. Talk to someone you trust.",
+      },
+      quote: {
+        content: "Every storm runs out of rain.",
+        writer: "folklore",
+      },
+      bgCode: "bg-slate-600",
+      songUrl: "https://example.com/sad-song-1",
+      todo: ["Take a walk", "Journal your thoughts"],
+    },
+
+    iframe use korbo wait for it
+
+ */
+const ResponseLayout = ({ emotion, response }) => {
+  return (
+    <div className="flex flex-col justify-center w-[95%] md:w-[85%]">
+      {/**advice part goes here  */}
+      <div
+        className={`px-2 my-3 py-1 w-full rounded-md bg-opacity-65 text-white  ${
+          emotion === "Angry"
+            ? "bg-red-600"
+            : emotion === "Sad"
+            ? "bg-slate-600"
+            : emotion === "Scared"
+            ? "bg-green-600"
+            : emotion === "Happy"
+            ? "bg-blue-600"
+            : emotion === "Lost"
+            ? "bg-stone-900"
+            : ""
+        }`}
+      >
+        <div>{response.advice.heading}</div>
+        <div
+          className="bg-primary text-stone-800 p-2 rounded-sm
+        my-1
+        "
+        >
+          <Typewriter
+            className="transition-all duration-200 ease-in-out"
+            words={[`${response.advice.content}`]}
+            loop={1}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            delaySpeed={1500}
+          />
+        </div>
+      </div>
+      {/**quote part */}
+      <div
+        className="relative w-full h-[30vh] bg-cover bg-center
+         text-white p-6 flex flex-col justify-between rounded-md "
+        style={{
+          backgroundImage: `url(${response.bgCode})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="bg-black/50 p-1 rounded">
+          <p className="mt-2 text-md font-bold">{response.quote.content}</p>
+        </div>
+        {/**mt auto to push shit to bottom */}
+        <div
+          className="bg-black/50 mt-auto p-1 rounded text-right
+         text-sm italic"
+        >
+          — {response.quote.writer || "Collected"}
+        </div>
+      </div>
+
+      {/**song  part converting  embedding part suks*/}
+      <div className="aspect-video my-2">
+        <div className="text-md text-white italic p-1">
+          Here's a song for your mood:
+        </div>
+        <iframe
+          className="w-full h-full rounded-md"
+          src={`https://www.youtube.com/embed/${
+            response.songUrl.split("v=")[1]
+          }`}
+          title="Relaxing Beach Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      {/**To do part */}
+      <div className="mb-2 mt-8">
+        <h1 className="text-md text-white italic p-1">
+          Things You can do in this situation:
+        </h1>
+        <div className="grid grid-cols-2 gap-2 justify-center items-center">
+          {response.todo.map((el, idx) => (
+            <div
+              className={`p-2 text-white h-full rounded-md bg-opacity-70
+              ${
+                emotion === "Angry"
+                  ? "bg-red-600"
+                  : emotion === "Sad"
+                  ? "bg-slate-600"
+                  : emotion === "Scared"
+                  ? "bg-green-600"
+                  : emotion === "Happy"
+                  ? "bg-blue-600"
+                  : emotion === "Lost"
+                  ? "bg-stone-900"
+                  : ""
+              }`}
+              key={idx}
+            >
+              {el}
+            </div>
+          ))}
         </div>
       </div>
     </div>

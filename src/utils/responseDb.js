@@ -9,7 +9,8 @@ export const response = {
         content: "Every storm runs out of rain.",
         writer: "folklore",
       },
-      bgCode: "bg-slate-600",
+      bgCode:
+        "https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       songUrl: "https://example.com/sad-song-1",
       todo: ["Take a walk", "Journal your thoughts"],
     },
@@ -236,8 +237,9 @@ export const response = {
         content: "The cave you fear to enter holds the treasure you seek.",
         writer: "Joseph Campbell",
       },
-      bgCode: "bg-indigo-600",
-      songUrl: "https://example.com/lost-song-2",
+      bgCode:
+        "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      songUrl: "https://www.youtube.com/watch?v=xFYQQPAOz7Y",
       todo: ["Try something new today", "Ask someone about their journey"],
     },
     {
@@ -264,8 +266,9 @@ export const response = {
         content: "Adventure is worthwhile in itself.",
         writer: "Amelia Earhart",
       },
-      bgCode: "bg-blue-700",
-      songUrl: "https://example.com/lost-song-4",
+      bgCode:
+        "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      songUrl: "https://www.youtube.com/watch?v=xFYQQPAOz7Y",
       todo: [
         "Make a list of things you're curious about",
         "Visit somewhere you've never been",
