@@ -171,7 +171,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
       <div
         className={`relative w-[85vw] md:w-[50vw] overflow-hidden rounded-md  border-b-8
          overflow-y-scroll scrollbar-custom h-[75vh]
-       backdrop-blur-lg bg-clip-padding bg-opacity-0  md:h-[60vh]
+       backdrop-blur-lg bg-clip-padding bg-opacity-0  
        ${
          emotion === "Angry"
            ? " border-red-600 "
@@ -422,7 +422,7 @@ const ResponseLayout = ({ emotion, response }) => {
       <div className="flex justify-center w-full">
         <Link to="/doctors">
           <button
-            className="rounded-md font-dancing flex gap-2 items-center
+            className="rounded-md font-mono flex gap-2 items-center
             active:scale-95 hover:bg-black bg-black/60 p-2 m-4 text-white
           "
           >

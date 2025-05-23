@@ -20,12 +20,14 @@ const Navbar = () => {
         </div>
 
         {/* logo goes here huh*/}
-        <div
-          className="font-dancing cursor-pointer p-2 rounded-lg 
-        text-white text-[1.8rem] font-[1000] bg-secondary"
-        >
-          Inner Beats
-        </div>
+        <Link to="/home">
+          <div
+            className="font-dancing cursor-pointer p-2 rounded-lg 
+          text-white text-[1.8rem] font-[1000] bg-secondary"
+          >
+            Inner Beats
+          </div>
+        </Link>
       </div>
 
       {openPop && (
