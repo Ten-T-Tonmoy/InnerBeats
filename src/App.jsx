@@ -6,10 +6,12 @@ import Aboutpage from "./pages/about/aboutpage";
 import Mainpage from "./pages/main/mainpage";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <div className="overflow-hidden">
+      <Toaster position="top-center" reverseOrder={false} />
       <Navbar />
       <div className="gap-4 flex  flex-col">
         <Routes>

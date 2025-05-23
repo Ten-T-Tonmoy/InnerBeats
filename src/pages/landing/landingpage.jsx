@@ -7,16 +7,18 @@ import { IoMdClose } from "react-icons/io";
 
 import { FaRegFaceSadCry as Sad1 } from "react-icons/fa6";
 import { FaRegFaceAngry as Angry } from "react-icons/fa6";
-import { IoHappyOutline as Happy } from "react-icons/io5";
+import { IoHappyOutline as Happy, IoArrowRedoOutline } from "react-icons/io5";
 import { RiEmotionSadLine as Sad2 } from "react-icons/ri"; //sad tears single
 import { PiSmileySadLight as Regret1 } from "react-icons/pi"; //regret
 import { HiOutlineEmojiSad as Regret2 } from "react-icons/hi";
 import { PiSmileyNervousBold as Scared } from "react-icons/pi";
+import { IoMdArrowBack } from "react-icons/io";
 
 //logic imports and shits
 
 import { request } from "../../utils/requestDb";
 import { getResult } from "../../hooks/useResponse";
+import toast from "react-hot-toast";
 
 //image imports
 import quotebg1 from "../../assets/quotebg/quotebg1.png";
@@ -127,7 +129,7 @@ export default function page() {
         </div>
       </div>
       <InputBox
-        setEmotion={() => setEmotion(val)}
+        setEmotion={(val) => setEmotion(val)}
         emotion={emotion}
         openSesame={() => setOpenPop(true)}
       />
@@ -177,7 +179,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
            : emotion === "Happy"
            ? " border-blue-600 "
            : emotion === "Lost"
-           ? " border-stone-900 "
+           ? " border-stone-950 "
            : ""
        }`}
       >
@@ -200,28 +202,55 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
           } `}
         >
           {" "}
-          <p>What made you {emotion} ?</p>
-          <div
-            className="text-[1.7rem] hover:bg-white hover:text-red-600 
-          rounded-full cursor-pointer active:scale-90 "
-            onClick={() => {
-              setOpenPop(false);
-              setResponse({
-                advice: {
-                  heading: "",
-                  content: "",
-                },
-                quote: {
-                  content: "",
-                  writer: "",
-                },
-                bgCode: "",
-                songUrl: "",
-                todo: [""],
-              });
-            }}
-          >
-            <IoMdClose />
+          {response.bgCode !== "" ? (
+            <div>I see you are {emotion} </div>
+          ) : (
+            <div> What made you {emotion} ? </div>
+          )}
+          <div className="flex gap-1 justify-center items-center">
+            <div
+              onClick={() => {
+                setResponse({
+                  advice: {
+                    heading: "",
+                    content: "",
+                  },
+                  quote: {
+                    content: "",
+                    writer: "",
+                  },
+                  bgCode: "",
+                  songUrl: "",
+                  todo: [""],
+                });
+              }}
+              className="text-[1.7rem] hover:bg-white hover:text-blue-600 
+            rounded-full cursor-pointer active:scale-90 "
+            >
+              <IoMdArrowBack />
+            </div>
+            <div
+              className="text-[1.7rem] hover:bg-white hover:text-red-600 
+            rounded-full cursor-pointer active:scale-90 "
+              onClick={() => {
+                setOpenPop(false);
+                setResponse({
+                  advice: {
+                    heading: "",
+                    content: "",
+                  },
+                  quote: {
+                    content: "",
+                    writer: "",
+                  },
+                  bgCode: "",
+                  songUrl: "",
+                  todo: [""],
+                });
+              }}
+            >
+              <IoMdClose />
+            </div>
           </div>
         </div>
         {/**content goes here request part */}
@@ -287,25 +316,25 @@ const ResponseLayout = ({ emotion, response }) => {
     <div className="flex flex-col justify-center w-[95%] md:w-[85%]">
       {/**advice part goes here  */}
       <div
-        className={`px-2 my-3 py-1 w-full rounded-md bg-opacity-65 text-white  ${
+        className={`px-2 my-3 py-1 w-full rounded-md bg-opacity-40 bg-black   `}
+      >
+        <div className="text-white">{response.advice.heading}</div>
+        <div
+          className={`bg-primary  p-2 rounded-md
+        my-1
+        ${
           emotion === "Angry"
-            ? "bg-red-600"
+            ? "text-red-600"
             : emotion === "Sad"
-            ? "bg-slate-600"
+            ? "text-slate-600"
             : emotion === "Scared"
-            ? "bg-green-600"
+            ? "text-green-600"
             : emotion === "Happy"
-            ? "bg-blue-600"
+            ? "text-blue-600"
             : emotion === "Lost"
-            ? "bg-stone-900"
+            ? "text-stone-900"
             : ""
         }`}
-      >
-        <div>{response.advice.heading}</div>
-        <div
-          className="bg-primary text-stone-800 p-2 rounded-sm
-        my-1
-        "
         >
           <Typewriter
             className="transition-all duration-200 ease-in-out"
@@ -321,14 +350,14 @@ const ResponseLayout = ({ emotion, response }) => {
       {/**quote part */}
       <div
         className="relative w-full h-[30vh] bg-cover bg-center
-         text-white p-6 flex flex-col justify-between rounded-md "
+         text-white p-4 flex flex-col justify-between rounded-md "
         style={{
           backgroundImage: `url(${response.bgCode})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="bg-black/50 p-1 rounded">
+        <div className="bg-black/50 p-2 rounded">
           <p className="mt-2 text-md font-bold">{response.quote.content}</p>
         </div>
         {/**mt auto to push shit to bottom */}
@@ -390,6 +419,20 @@ const ResponseLayout = ({ emotion, response }) => {
 };
 
 const InputBox = ({ emotion, openSesame, setEmotion }) => {
+  const handleError = () => {
+    setEmotion(emotion.trim());
+    if (
+      emotion !== "Sad" &&
+      emotion !== "Happy" &&
+      emotion !== "Angry" &&
+      emotion !== "Lost" &&
+      emotion !== "Scared"
+    ) {
+      toast.error("Please choose a valid option");
+      return;
+    }
+    openSesame();
+  };
   return (
     <div
       className=" border-[.5px] my-4 border-black rounded-md 
@@ -398,13 +441,13 @@ const InputBox = ({ emotion, openSesame, setEmotion }) => {
       <input
         value={emotion}
         type="text"
-        onChange={(e) => setEmotion(e.target.data)}
+        onChange={(e) => setEmotion(e.target.value)}
         onSubmit={(val) => setEmotion(val)}
         placeholder="emotion name ..."
         className="p-2  w-full bg-yellow-100/40 rounded-l-md"
       />
       <button
-        onClick={openSesame}
+        onClick={handleError}
         type="submit"
         className="py-1 px-2 rounded-r-md hover:scale-105 
       transition-all
