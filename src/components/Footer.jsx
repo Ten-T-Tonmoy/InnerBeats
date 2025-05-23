@@ -1,11 +1,12 @@
 import React from "react";
 import personImg from "../assets/aboutus.png";
 import doctorImg from "../assets/doctor.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer
-      class="bg-[#222222] text-white 
+      className="bg-[#222222] text-white 
      py-8 px-4 space-y-2  flex-col  text-sm sm:text-base"
     >
       <div className="md:px-[10vw] lg:px-[25vw] md:py-4">
@@ -16,7 +17,9 @@ const Footer = () => {
           <span>
             <img src={personImg} className="w-5" alt="person icon" />
           </span>
-          <span>About Us - Your Friendly Listeners!</span>
+          <Link to="/about">
+            <span>About Us - Your Friendly Listeners!</span>
+          </Link>
         </p>
         <p
           className="cursor-pointer hover:text-secondary 
@@ -25,11 +28,13 @@ const Footer = () => {
           <span>
             <img src={doctorImg} alt="doctor icon" className="w-5" />
           </span>
-          <span>Trusted Psychiatric Help</span>
+          <Link to="/doctors">
+            <span>Trusted Psychiatric Help</span>
+          </Link>
         </p>
       </div>
 
-      <div className="p-2">
+      <div className="p-6">
         <p className="text-center  text-gray-300/80">
           Powered by{" "}
           <span className="font-dancing text-secondary text-[1.3rem]">

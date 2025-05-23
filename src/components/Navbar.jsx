@@ -47,10 +47,10 @@ const Popup = ({ openPop, closePop }) => {
       >
         <button
           onClick={closePop}
-          className="border rounded-full mb-4  active:scale-90 transition-all duration-200"
+          className="border rounded-full mb-4 border-red-600 hover:border-none  active:scale-90 transition-all duration-200"
         >
           <IoMdClose
-            className="text-white text-[2rem]  hover:bg-white hover:text-secondary rounded-full 
+            className="text-red-600 text-[2rem]  hover:bg-white hover:text-secondary rounded-full 
           "
           />
         </button>

@@ -12,6 +12,8 @@ import { RiEmotionSadLine as Sad2 } from "react-icons/ri"; //sad tears single
 import { PiSmileySadLight as Regret1 } from "react-icons/pi"; //regret
 import { HiOutlineEmojiSad as Regret2 } from "react-icons/hi";
 import { PiSmileyNervousBold as Scared } from "react-icons/pi";
+import { IoMdSend } from "react-icons/io";
+
 import { IoMdArrowBack } from "react-icons/io";
 
 //logic imports and shits
@@ -19,6 +21,7 @@ import { IoMdArrowBack } from "react-icons/io";
 import { request } from "../../utils/requestDb";
 import { getResult } from "../../hooks/useResponse";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 //image imports
 import quotebg1 from "../../assets/quotebg/quotebg1.png";
@@ -254,7 +257,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
           </div>
         </div>
         {/**content goes here request part */}
-        <div className="flex flex-col gap-1 items-center   py-3 ">
+        <div className="flex flex-col gap-2 items-center  py-3 ">
           {response.bgCode !== "" ? (
             <ResponseLayout emotion={emotion} response={response} />
           ) : (
@@ -266,8 +269,8 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
                     setResponse(getResult({ emotion, reasonIdx: idx }));
                   }}
                   key={idx}
-                  className={` w-[90%]
-            cursor-pointer py-1 px-2 text-white  bg-opacity-50
+                  className={` w-[90%] text-[1.05rem] sm:text-[1rem]
+            cursor-pointer py-3 px-4 text-white  bg-opacity-50
             rounded-md hover:scale-105 hover:bg-opacity-100
             ${
               emotion === "Angry"
@@ -413,6 +416,20 @@ const ResponseLayout = ({ emotion, response }) => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/**need professional consultation */}
+      <div className="flex justify-center w-full">
+        <Link to="/doctors">
+          <button
+            className="rounded-md font-dancing flex gap-2 items-center
+            active:scale-95 hover:bg-black bg-black/60 p-2 m-4 text-white
+          "
+          >
+            Professional Consultation
+            <IoMdSend className="text-white text-[1.2rem]" />
+          </button>
+        </Link>
       </div>
     </div>
   );

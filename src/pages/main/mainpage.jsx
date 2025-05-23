@@ -1,12 +1,15 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import UnderConstruction from "./UnderConstruction";
+import Notfound from "./Notfound";
 
 const page = () => {
   return (
-    <div>
-      <h1 className="text-2xl font-bold mb-4">Skeleton Daisy+React Router</h1>
-
-      <div className="flex gap-2 mb-4">
+    <div className="flex relative flex-col bg-primary justify-center items-center py-5">
+      <div className="p-4  justify-start sm:text-center w-full ">
+        Available Pages :{" "}
+      </div>
+      <div className="flex gap-2 mb-4 justify-center items-center">
         <Link to="/home">
           <button className="bg-green-400 p-2 text-white rounded-md">
             Go to Home
@@ -19,13 +22,15 @@ const page = () => {
         </Link>
         <Link to="/doctors">
           <button className="bg-pink-400 p-2 text-white rounded-md">
-            Psychs
+            Doctors
           </button>
         </Link>
-        <button className="bg-blue-400 p-2 text-white rounded-md">
-          Click Me
-        </button>
       </div>
+      <h1 className="p-4 text-xl ">
+        Ignore this part if not a Dev and click on buttons to redirect
+      </h1>
+
+      <UnderConstruction />
     </div>
   );
 };
