@@ -20,6 +20,11 @@ const page = () => {
             About Us
           </button>
         </Link>
+        <Link to="/ai">
+          <button className="bg-yellow-400 p-2 text-white rounded-md">
+            AI assistant
+          </button>
+        </Link>
         <Link to="/doctors">
           <button className="bg-pink-400 p-2 text-white rounded-md">
             Doctors

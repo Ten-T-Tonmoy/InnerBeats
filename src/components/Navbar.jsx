@@ -75,6 +75,15 @@ const Popup = ({ openPop, closePop }) => {
               Psychiatric Help
             </button>
           </Link>
+          <Link to="/ai">
+            <button
+              className="hover:bg-slate-300 hover:bg-opacity-60 rounded-md 
+            text-white py-3 px-20 border w-full active:scale-90 transition-all duration-200"
+              onClick={closePop}
+            >
+              AI Assistant
+            </button>
+          </Link>
           <Link to="/about">
             <button
               className="hover:bg-slate-300 hover:bg-opacity-60 rounded-md 
