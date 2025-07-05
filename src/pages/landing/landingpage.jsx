@@ -256,8 +256,34 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
             </div>
           </div>
         </div>
-        {/**content goes here request part */}
+        {/**content goes here request part  also AI assistant Redirection*/}
         <div className="flex flex-col gap-2 items-center  py-3 ">
+          {response.bgCode === "" && (
+            <Link to="/ai" className="w-[90%] ">
+              <div
+                className={` bg-gray-300 font-black px-3 py-3 text-[1.2rem] 
+                cursor-pointer  active:scale-90 rounded-md ease-in-out transition-all
+                duration-300 
+                ${
+                  emotion === "Angry"
+                    ? "text-red-600 hover:text-white hover:bg-red-600"
+                    : emotion === "Sad"
+                    ? "text-slate-600 hover:text-white hover:bg-slate-600"
+                    : emotion === "Scared"
+                    ? "text-green-600 hover:text-white hover:bg-green-600"
+                    : emotion === "Happy"
+                    ? "text-blue-600 hover:text-white hover:bg-blue-600"
+                    : emotion === "Lost"
+                    ? "text-stone-900 hover:text-white hover:bg-stone-900"
+                    : ""
+                }
+                `}
+              >
+                {" "}
+                Ai assistant
+              </div>
+            </Link>
+          )}
           {response.bgCode !== "" ? (
             <ResponseLayout emotion={emotion} response={response} />
           ) : (

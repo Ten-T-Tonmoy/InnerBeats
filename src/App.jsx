@@ -7,6 +7,7 @@ import Mainpage from "./pages/main/mainpage";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { Toaster } from "react-hot-toast";
+import Assistant from "./pages/Ai/Assistant";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/about" element={<Aboutpage />} />
           <Route path="/home" element={<Landingpage />} />
           <Route path="/doctors" element={<Doctorspage />} />
+          <Route path="/ai" element={<Assistant />} />
         </Routes>
       </div>
       <Footer />
