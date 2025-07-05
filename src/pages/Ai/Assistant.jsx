@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useApi } from "../../hooks/useApi";
 import MarkDown from "./Markdown";
 
@@ -14,8 +14,24 @@ const Assistant = () => {
     }
   };
 
+  const chatRef = useRef(null);
+  //   const loadRef = useRef(null);
+  useEffect(() => {
+    if (loading) {
+      chatRef.current.scrollTo({
+        top: chatRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    } else {
+      chatRef.current.scrollTo({
+        top: chatRef.current.scrollTop + chatRef.current.scrollHeight * 0.05,
+        behavior: "smooth",
+      });
+    }
+  }, [messages, loading]);
+
   return (
-    <div className="w-full bg-primary py-5 ">
+    <div className="w-full bg-primary pt-10 pb-20 ">
       <div className="w-[90vw] rounded-xl  m-auto md:w-[60vw]  bg-primary">
         <h2 className="bg-[#222222] rounded-t-md  text-[1.2rem] font-extrabold p-2 text-center text-white ">
           ✨ AI Assistant ✨
@@ -23,6 +39,7 @@ const Assistant = () => {
 
         {/**chat box here */}
         <div
+          ref={chatRef}
           className="overflow-y-scroll 
         min-h-[400px] border-2 max-h-[400px]
          border-[#ccc] p-3 mb-3"
