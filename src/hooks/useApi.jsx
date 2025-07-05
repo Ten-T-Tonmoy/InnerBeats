@@ -25,7 +25,7 @@ export const useApi = () => {
         headers: {
           Authorization: `Bearer ${API_KEY}`,
           "Content-Type": "application/json",
-          "HTTP-Referer": "http://localhost",
+          // "HTTP-Referer": "http://localhost",
           "X-Title": "PyschHelper",
         },
         body: JSON.stringify({
