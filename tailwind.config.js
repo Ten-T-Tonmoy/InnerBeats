@@ -8,6 +8,7 @@ export default {
         footer: "#313133",
         secondary: "#10b2e3",
       },
+
       fontFamily: {
         yellowtail: ['"Yellowtail"', "cursive"],
         dancing: ['"Dancing Script"', "cursive"],
