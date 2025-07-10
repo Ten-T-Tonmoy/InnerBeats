@@ -261,26 +261,27 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
           {response.bgCode === "" && (
             <Link to="/ai" className="w-[90%] ">
               <div
-                className={` bg-gray-300 font-black px-3 py-3 text-[1.2rem] 
+                className={` bg-gray-300 font-mono  px-3 py-3 text-[1.1rem] 
                 cursor-pointer  active:scale-90 rounded-md ease-in-out transition-all
-                duration-300 
+                duration-300  flex justify-between items-center shadow-md
                 ${
                   emotion === "Angry"
-                    ? "text-red-600 hover:text-white hover:bg-red-600"
+                    ? "text-red-600 hover:text-white hover:bg-gradient-to-tr from-black to-red-600"
                     : emotion === "Sad"
-                    ? "text-slate-600 hover:text-white hover:bg-slate-600"
+                    ? "text-slate-600 hover:text-white hover:bg-gradient-to-tr from-black to-slate-600"
                     : emotion === "Scared"
-                    ? "text-green-600 hover:text-white hover:bg-green-600"
+                    ? "text-green-600 hover:text-white hover:bg-gradient-to-tr from-black to-green-600"
                     : emotion === "Happy"
-                    ? "text-blue-600 hover:text-white hover:bg-blue-600"
+                    ? "text-blue-600 hover:text-white hover:bg-gradient-to-tr from-black to-blue-600"
                     : emotion === "Lost"
-                    ? "text-stone-900 hover:text-white hover:bg-stone-900"
+                    ? "text-stone-900 hover:text-white hover:bg-gradient-to-tr from-black to-stone-700"
                     : ""
                 }
                 `}
               >
                 {" "}
-                Ai assistant
+                Speak with Ai assistant
+                <IoMdSend className=" text-[1.2rem]" />
               </div>
             </Link>
           )}
@@ -297,7 +298,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
                   key={idx}
                   className={` w-[90%] text-[1.05rem] sm:text-[1rem]
             cursor-pointer py-3 px-4 text-white  bg-opacity-50
-            rounded-md hover:scale-105 hover:bg-opacity-100
+            rounded-md hover:scale-105 hover:bg-opacity-100 shadow-lg
             ${
               emotion === "Angry"
                 ? "bg-red-600"

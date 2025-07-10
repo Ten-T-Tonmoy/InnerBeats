@@ -7,25 +7,29 @@ import { FaFacebook } from "react-icons/fa";
 const creators = [
   {
     name: "Seyam",
-    fullName: "Abdullah Al Seyam",
+    fullName: "Abdullah Al Seyam ",
+    session: "(ICE 2021-22)",
     phone: "01704425676",
     facebookUrl: "https://www.facebook.com/abdullah.al.seyam.73066",
   },
   {
     name: "Arnob",
     fullName: "Fidel Arnob",
+    session: "(ICE 2021-22)",
     phone: "01326116245",
     facebookUrl: "https://www.facebook.com/arnob.521793",
   },
   {
     name: "Sujon",
     fullName: "Sujon Ahmed",
+    session: "(ICE 2021-22)",
     phone: "01879495373",
     facebookUrl: "https://www.facebook.com/sujon.ahmed.217296",
   },
   {
     name: "Emon",
     fullName: "Md Yeasin Khandaker Emon",
+    session: "(ICE 2021-22)",
     phone: "01518965418",
     facebookUrl: "https://www.facebook.com/mdyeasin.khandakar.3",
   },
@@ -67,11 +71,13 @@ const AboutUs = () => {
           {creators.map((el, index) => (
             <div
               key={index}
-              className="bg-indigo-200 hover:text-secondary rounded-2xl shadow-lg p-6
+              className="bg-indigo-200 hover:text-secondary rounded-2xl shadow-lg p-6 w-[87vw] sm:w-full
                flex flex-col items-center space-y-3 hover:scale-105 transition transform duration-300"
             >
               <h2 className="text-2xl font-semibold ">{el.name}</h2>
-              <p className="text-gray-600">{el.fullName}</p>
+              <p className="text-gray-600">
+                {el.fullName} {el.session}
+              </p>
               <p className="text-gray-700 font-medium  gap-3 flex justify-start w-full items-center">
                 <FaPhoneAlt className="text-[1.1rem] mt-1" />
                 {el.phone}
