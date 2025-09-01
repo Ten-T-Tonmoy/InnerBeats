@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import { MdLogout } from "react-icons/md";
+import { FaUserCircle } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openPop, setOpenPop] = useState(false);
 
   return (
-    <div className="bg-secondary w-full  top-0">
+    <div className="bg-secondary w-full fixed top-0 z-50 ">
       <div className="flex items-center justify-center md:justify-start relative ">
         {/* nav menu bar  */}
         <div
@@ -18,8 +21,14 @@ const Navbar = () => {
         >
           <IoMdMenu />
         </div>
+        <div
+          className="absolute left-4 top-1/2 -translate-y-1/2 text-white p-2
+         cursor-pointer  active:scale-90 transition-all duration-200"
+        >
+          <FaUserCircle className="text-[1.8rem]" />
+        </div>
 
-        {/* logo goes here huh*/}
+        {/* ------------------logos-----------------*/}
         <Link to="/home">
           <div
             className="font-dancing cursor-pointer p-2 md:pl-20 rounded-lg 
@@ -58,6 +67,7 @@ const Popup = ({ openPop, closePop }) => {
           "
           />
         </button>
+
         <div className="flex  font-bold font-sans flex-col gap-[6px]">
           <Link to="/home">
             <button
@@ -75,6 +85,15 @@ const Popup = ({ openPop, closePop }) => {
               onClick={closePop}
             >
               Log in
+            </button>
+          </Link>
+          <Link to="/gallery">
+            <button
+              className="bg-primary text-secondary hover:bg-opacity-60 rounded-md 
+             py-1 px-4 text-start border w-full active:scale-90 transition-all duration-200"
+              onClick={closePop}
+            >
+              Photo Gallery
             </button>
           </Link>
           <Link to="/signup">
@@ -113,6 +132,17 @@ const Popup = ({ openPop, closePop }) => {
               About Us
             </button>
           </Link>
+          <button
+            onClick={closePop}
+            className="border text-white rounded-md mb-4 bg-red-600 hover:bg-white hover:text-red-600 w-full py-2
+          active:scale-90  transition-all duration-200 flex justify-between px-3 items-center"
+          >
+            <p className=" font-sans font-bold">Log Out</p>
+            <MdLogout
+              className=" text-[1.4rem]   
+          "
+            />
+          </button>
         </div>
       </div>
     </div>

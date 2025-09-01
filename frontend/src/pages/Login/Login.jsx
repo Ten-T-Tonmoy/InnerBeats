@@ -34,7 +34,7 @@ export const Login = () => {
   return (
     <>
       <div
-        className="flex-1 py-20 flex-col
+        className="flex-1 py-24 flex-col
     bg-primary justify-center items-center flex"
       >
         <p className="my-4 text-center text-sm text-footer">

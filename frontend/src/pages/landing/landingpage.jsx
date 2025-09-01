@@ -18,7 +18,8 @@ import { IoMdArrowBack } from "react-icons/io";
 
 //logic imports and shits
 
-import { request } from "../../utils/requestDb";
+import { request } from "../../utils/requestDb.js";
+import { response } from "../../utils/responseDb.js";
 import { getResult } from "../../hooks/useResponse";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
@@ -49,7 +50,7 @@ export default function page() {
     console.log("New response:", response);
   }, [response]);
   return (
-    <div className="bg-primary flex flex-col items-center">
+    <div className="bg-primary flex flex-col items-center pt-20">
       {openPop && (
         <PopUp
           emotion={emotion}
@@ -258,6 +259,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
         </div>
         {/**content goes here request part  also AI assistant Redirection*/}
         <div className="flex flex-col gap-2 items-center  py-3 ">
+          {/* -------------------ai assi--------------------- */}
           {response.bgCode === "" && (
             <Link to="/ai" className="w-[90%] ">
               <div

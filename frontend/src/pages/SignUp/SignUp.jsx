@@ -52,7 +52,7 @@ const SignUp = () => {
 
   return (
     <div
-      className="flex-1 py-10 flex-col
+      className="flex-1 py-20 flex-col
     bg-primary justify-center items-center flex"
     >
       <p className="my-4 text-center text-sm text-footer">

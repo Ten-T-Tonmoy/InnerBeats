@@ -3,6 +3,7 @@ import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
+import AdditionalHelp from "./AdditionalHelp";
 
 const creators = [
   {
@@ -38,7 +39,7 @@ const creators = [
 const AboutUs = () => {
   return (
     <div
-      className="min-h-screen flex flex-col 
+      className="min-h-screen flex flex-col pt-24
      justify-center bg-primary p-6 space-y-10"
     >
       <h1
@@ -94,6 +95,7 @@ const AboutUs = () => {
               </p>
             </div>
           ))}
+          <AdditionalHelp />
         </div>
       </div>
     </div>

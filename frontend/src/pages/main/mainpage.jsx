@@ -5,7 +5,7 @@ import Notfound from "./Notfound";
 
 const page = () => {
   return (
-    <div className="flex relative flex-col bg-primary justify-center items-center py-5 ">
+    <div className="flex relative flex-col bg-primary justify-center items-center py-5 pt-20 ">
       <div className="p-4  justify-start sm:text-center w-full ">
         Available Pages :{" "}
       </div>

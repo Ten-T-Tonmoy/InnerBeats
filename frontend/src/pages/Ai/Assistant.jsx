@@ -37,7 +37,7 @@ const Assistant = () => {
   }, [messages, loading]);
 
   return (
-    <div className="w-full bg-primary pt-10 pb-20 ">
+    <div className="w-full bg-primary pb-20 pt-28">
       <div className="w-[90vw] rounded-xl  m-auto md:w-[60vw]  bg-primary">
         <h2 className="bg-[#222222] justify-center flex items-center gap-2 rounded-t-md  text-[1.2rem] font-extrabold p-2 text-center text-white ">
           <PiBrainFill /> AI Assistant

@@ -16,7 +16,6 @@ const App = () => {
     <div className="overflow-x-hidden min-h-screen flex flex-col justify-between">
       <Toaster position="top-center" reverseOrder={false} />
       <Navbar />
-
       <Routes>
         <Route path="/" element={<Mainpage />} />
         <Route path="/about" element={<Aboutpage />} />

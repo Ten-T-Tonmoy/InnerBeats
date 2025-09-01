@@ -85,3 +85,25 @@ export const loginController = async (req, res) => {
     res.status(500).json({ error: "Something went wrong while logging in" });
   }
 };
+
+//----------------------------getuser-----------------------------------
+
+export const getUserController = async (req, res) => {
+  try {
+    const user = await prisma.user.findUnique({
+      where: { id: req.userId },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        profilePhoto: true,
+        whatsapp: true,
+        facebook: true,
+      },
+    });
+    res.status(200).json(user);
+  } catch (error) {
+    console.log(" getUser controller Error", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+};

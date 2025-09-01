@@ -23,7 +23,7 @@ const TextAnimation = () => {
 
 const Doctors = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary pt-20">
       <div className="p-3 ">
         <p className="text-[1.4rem] flex  my-4 md:justify-center  font-[1000] ">
           <TextAnimation />
