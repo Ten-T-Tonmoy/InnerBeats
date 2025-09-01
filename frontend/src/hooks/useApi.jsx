@@ -29,7 +29,7 @@ export const useApi = () => {
           "X-Title": "PyschHelper",
         },
         body: JSON.stringify({
-          model: "mistralai/devstral-small:free",
+          model: "deepseek/deepseek-r1-0528:free",
           //   messages: [
           //     {
           //       role: "system",
@@ -40,7 +40,7 @@ export const useApi = () => {
           messages: [
             {
               role: "system",
-              content: "You're seductive pretty old mommy lady.",
+              content: "You're a helpful mental support assistant",
             },
             ...updatedChat,
           ],

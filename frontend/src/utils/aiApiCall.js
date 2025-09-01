@@ -14,11 +14,11 @@ const getResponse = async (req) => {
         "X-Title": "PyschHelper",
       },
       body: JSON.stringify({
-        model: "mistralai/devstral-small:free",
+        model: "deepseek/deepseek-r1-0528:free",
         messages: [
           {
             role: "system",
-            content: "You're seductive pretty old mommy lady.",
+            content: "You're helpful assistant.",
           }, //choosing role
           { role: "user", content: userMsg },
         ],
