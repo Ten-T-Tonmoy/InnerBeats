@@ -50,14 +50,14 @@ const SignUp = () => {
       className="flex-1 py-10 flex-col
     bg-primary justify-center items-center flex"
     >
-      <p className="m-1 text-center text-sm text-footer">
+      <p className="my-4 text-center text-sm text-footer">
         Want to stay anonymous?{" "}
         <a href="/home" className="text-secondary hover:underline">
           Explore without registering
         </a>
       </p>
-      <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-lg">
-        <h2 className="mb-6 text-center text-2xl font-bold text-footer">
+      <div className="w-full max-w-md rounded-lg bg-gray-100 p-8 shadow-lg">
+        <h2 className="mb-4 text-center text-2xl font-bold text-footer">
           Create an Account
         </h2>
 
@@ -139,7 +139,7 @@ const SignUp = () => {
             type="submit"
             disabled={loading}
             className="w-full rounded-md bg-secondary py-2 font-semibold
-             text-white shadow-md transition hover:bg-secondary/90 
+             text-gray-100 shadow-md transition hover:bg-secondary/90 
              disabled:cursor-not-allowed disabled:opacity-70"
           >
             {loading ? "Signing up..." : "Sign Up"}

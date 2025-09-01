@@ -32,14 +32,14 @@ export const Login = () => {
         className="flex-1 py-20 flex-col
     bg-primary justify-center items-center flex"
       >
-        <p className="m-1 text-center text-sm text-footer">
+        <p className="my-4 text-center text-sm text-footer">
           Want to stay anonymous?{" "}
           <a href="/home" className="text-secondary hover:underline">
             Explore without registering
           </a>
         </p>
-        <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-lg">
-          <h2 className="mb-6 text-center text-2xl font-bold text-footer">
+        <div className="w-full max-w-md rounded-lg bg-gray-100 p-8 shadow-lg">
+          <h2 className="mb-4 text-center text-2xl font-bold text-footer">
             Sign In
           </h2>
 
@@ -84,7 +84,7 @@ export const Login = () => {
               type="submit"
               disabled={loading}
               className="w-full rounded-md bg-secondary py-2
-             font-semibold text-white shadow-md transition
+             font-semibold text-gray-100 shadow-md transition
               hover:bg-secondary/90 disabled:cursor-not-allowed
                disabled:opacity-70"
             >
@@ -99,6 +99,10 @@ export const Login = () => {
             </a>
           </p>
         </div>
+        <p className="mt-6 text-center max-w-md text-sm text-footer">
+          Register to support others by sharing tips and <br /> being there as a
+          friend in times of mental distress.
+        </p>
       </div>
     </>
   );
