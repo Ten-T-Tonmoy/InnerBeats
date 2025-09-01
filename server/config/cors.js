@@ -1,5 +1,5 @@
 const allowedOrigins = [
-  "http://localhost:3000",
+  "http://localhost:5173",
   "custom domain name",
   "more custom urls",
 ];
@@ -20,5 +20,5 @@ export default corsOptions;
 
 export const simpleCors = {
   origin: "http://localhost:5173",
-  credentials: true, //for cookies
+  credentials: true, 
 };

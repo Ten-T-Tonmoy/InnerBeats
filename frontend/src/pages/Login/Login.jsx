@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,6 +26,8 @@ export const Login = () => {
       console.error("error occured while logging in", err.message);
     } finally {
       setLoading(false);
+      toast.success("Welcome !");
+      navigate("/home");
     }
   };
 
@@ -38,7 +43,7 @@ export const Login = () => {
             Explore without registering
           </a>
         </p>
-        <div className="w-full max-w-md rounded-lg bg-gray-100 p-8 shadow-lg">
+        <div className="w-[88vw] sm:w-full max-w-md rounded-lg bg-gray-100 p-8 shadow-lg">
           <h2 className="mb-4 text-center text-2xl font-bold text-footer">
             Sign In
           </h2>

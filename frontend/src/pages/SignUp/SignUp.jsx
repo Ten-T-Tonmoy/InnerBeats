@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -37,11 +40,13 @@ const SignUp = () => {
 
       if (!res.ok) throw new Error("Registration failed/Invalid credentials");
       const data = await res.json();
-      console.log("✅ Registered:", data);
+      console.log("Registered:", data);
     } catch (err) {
       console.error("error occured while registration", err.message);
     } finally {
       setLoading(false);
+      toast.success("Registered Successfully!");
+      navigate("/home");
     }
   };
 
@@ -56,7 +61,7 @@ const SignUp = () => {
           Explore without registering
         </a>
       </p>
-      <div className="w-full max-w-md rounded-lg bg-gray-100 p-8 shadow-lg">
+      <div className="w-[88vw] sm:w-full max-w-md rounded-lg bg-gray-100 p-8 shadow-lg">
         <h2 className="mb-4 text-center text-2xl font-bold text-footer">
           Create an Account
         </h2>

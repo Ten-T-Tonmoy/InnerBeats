@@ -69,7 +69,7 @@ export default function page() {
         >
           How are you feeling today?
         </h1>
-        <div className="flex  gap-[1px] w-full justify-center md:justify-center md:gap-2 p-2">
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-[4px] w-full  md:gap-2 p-2">
           <div
             onClick={() => setEmotion("Angry")}
             className={`border-2 border-red-600  text-red-600 py-2 px-4 text-[1.8rem] rounded-md 

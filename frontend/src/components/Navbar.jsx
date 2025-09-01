@@ -58,11 +58,11 @@ const Popup = ({ openPop, closePop }) => {
           "
           />
         </button>
-        <div className="flex font-bold font-sans flex-col gap-[6px]">
+        <div className="flex  font-bold font-sans flex-col gap-[6px]">
           <Link to="/home">
             <button
-              className="bg-primary  text-secondary hover:bg-opacity-60 rounded-md 
-             py-1 px-20 border w-full active:scale-90 transition-all duration-200"
+              className="bg-primary w-[60vw] md:w-[35vw] lg:w-[25vw] text-start text-secondary hover:bg-opacity-60 rounded-md 
+             py-1 px-4 border  active:scale-90 transition-all duration-200"
               onClick={closePop}
             >
               HomePage
@@ -71,7 +71,7 @@ const Popup = ({ openPop, closePop }) => {
           <Link to="/login">
             <button
               className="bg-primary text-secondary hover:bg-opacity-60 rounded-md 
-             py-1 px-20 border w-full active:scale-90 transition-all duration-200"
+             py-1 px-4 text-start border w-full active:scale-90 transition-all duration-200"
               onClick={closePop}
             >
               Log in
@@ -80,7 +80,7 @@ const Popup = ({ openPop, closePop }) => {
           <Link to="/signup">
             <button
               className="bg-primary text-secondary hover:bg-opacity-60 rounded-md 
-             py-1 px-20 border w-full active:scale-90 transition-all duration-200"
+             py-1 px-4 text-start border w-full active:scale-90 transition-all duration-200"
               onClick={closePop}
             >
               Sign up
@@ -89,7 +89,7 @@ const Popup = ({ openPop, closePop }) => {
           <Link to="/doctors">
             <button
               className="bg-primary text-secondary hover:bg-opacity-60 rounded-md 
-             py-1 px-20 border w-full active:scale-90 transition-all duration-200"
+             py-1 px-4 text-start border w-full active:scale-90 transition-all duration-200"
               onClick={closePop}
             >
               Psychiatric Help
@@ -98,7 +98,7 @@ const Popup = ({ openPop, closePop }) => {
           <Link to="/ai">
             <button
               className="bg-primary text-secondary hover:bg-opacity-60 rounded-md 
-             py-1 px-20 border w-full active:scale-90 transition-all duration-200"
+             py-1 px-4 text-start border w-full active:scale-90 transition-all duration-200"
               onClick={closePop}
             >
               AI Assistant
@@ -107,7 +107,7 @@ const Popup = ({ openPop, closePop }) => {
           <Link to="/about">
             <button
               className="bg-primary text-secondary hover:bg-opacity-60 rounded-md 
-             py-1 px-20 border w-full active:scale-90 transition-all duration-200"
+             py-1 px-4 text-start border w-full active:scale-90 transition-all duration-200"
               onClick={closePop}
             >
               About Us
