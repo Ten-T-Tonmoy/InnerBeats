@@ -16,8 +16,6 @@ import { IoMdSend } from "react-icons/io";
 
 import { IoMdArrowBack } from "react-icons/io";
 
-//logic imports and shits
-
 import { request } from "../../utils/requestDb.js";
 // import { response } from "../../utils/responseDb.js";
 import { getResult } from "../../hooks/useResponse";
@@ -28,7 +26,6 @@ import { Link } from "react-router-dom";
 import quotebg1 from "../../assets/quotebg/quotebg1.png";
 
 export default function page() {
-  //set back to empty and false asap
   const [emotion, setEmotion] = useState("");
   const [openPop, setOpenPop] = useState(false);
   const [response, setResponse] = useState({
@@ -41,36 +38,33 @@ export default function page() {
       writer: "",
     },
     bgCode: "",
-    songUrl: "", //this will be youtube code to iframe
+    songUrl: "",
     todo: [""],
   });
+  const [reasonSend, setReasonSend] = useState("");
 
-  //since state change is asynchronus so yeah
-  useEffect(() => {
-    // console.log("New response:", response);
-    // const handleAddToHistory = async () => {
-    //   try {
-    //     const res = await fetch("http://localhost:3000/api/choices", {
-    //       method: "POST",
-    //       headers: { "Content-Type": "application/json" },
-    //       credentials: "include", // JWT cookie
-    //       body: JSON.stringify({ emotion, option, isHelpful }),
-    //     });
-    //     if (!res.ok) throw new Error("Failed to add choice");
-    //     const updatedUser = await res.json();
-    //     setUserHistory(updatedUser.pastChoices || []);
-    //     setEmotion("");
-    //     setOption("");
-    //     setIsHelpful(false);
-    //     toast.success("Choice added!");
-    //   } catch (err) {
-    //     console.error(err);
-    //     toast.error("Error adding choice");
-    //   } finally {
-    //     setLoading(false);
-    //   }
-    // };
-  }, [response]);
+  const handleAddToHistory = async (selectedEmotion, selectedReason) => {
+    try {
+      const res = await fetch("http://localhost:3000/api/user/addhistory", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({
+          emotion: selectedEmotion,
+          option: selectedReason,
+          isHelpful: true,
+        }),
+      });
+
+      if (!res.ok) throw new Error("Failed to add choice");
+      const updatedUser = await res.json();
+      console.log("History added successfully:", updatedUser);
+      toast.success("Choice added to history!");
+    } catch (err) {
+      console.error("Error adding to history:", err);
+      toast.error("Error adding choice to history");
+    }
+  };
 
   useEffect(() => {
     if (!sessionStorage.getItem("viewed")) {
@@ -80,6 +74,7 @@ export default function page() {
       sessionStorage.setItem("viewed", "true");
     }
   }, []);
+
   return (
     <div className="bg-primary flex flex-col items-center pt-20">
       {openPop && (
@@ -88,6 +83,8 @@ export default function page() {
           response={response}
           setResponse={(val) => setResponse(val)}
           setOpenPop={(val) => setOpenPop(val)}
+          setReasonSend={(val) => setReasonSend(val)}
+          handleAddToHistory={handleAddToHistory}
         />
       )}
       <div className="flex flex-col py-5 items-center justify-center font-semibold text-slate-700">
@@ -168,7 +165,6 @@ export default function page() {
         emotion={emotion}
         openSesame={() => setOpenPop(true)}
       />
-      {openPop && <div> pop is open bro</div>}
       <Bottom />
     </div>
   );
@@ -191,7 +187,29 @@ const TypingText = () => {
   );
 };
 
-const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
+const PopUp = ({
+  emotion,
+  setOpenPop,
+  response,
+  setResponse,
+  setReasonSend,
+  handleAddToHistory,
+}) => {
+  // Fixed the onClick handler for reason selection
+  const handleReasonClick = async (reason, idx) => {
+    try {
+      const newResponse = getResult({ emotion, reasonIdx: idx });
+      setResponse(newResponse);
+      setReasonSend(reason);
+
+      // Call handleAddToHistory with the current emotion and selected reason
+      await handleAddToHistory(emotion, reason);
+    } catch (error) {
+      console.error("Error handling reason click:", error);
+      toast.error("Something went wrong");
+    }
+  };
+
   return (
     <div
       className={`
@@ -326,9 +344,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
               .find((val) => val.type === emotion)
               ?.reasons.map((reason, idx) => (
                 <div
-                  onClick={() => {
-                    setResponse(getResult({ emotion, reasonIdx: idx }));
-                  }}
+                  onClick={() => handleReasonClick(reason, idx)}
                   key={idx}
                   className={` w-[90%] text-[1.05rem] sm:text-[1rem]
             cursor-pointer py-3 px-4 text-white  bg-opacity-50
@@ -358,24 +374,6 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
   );
 };
 
-/**
- * {
-      advice: {
-        heading: "Feeling low?",
-        content: "It's okay to cry. Talk to someone you trust.",
-      },
-      quote: {
-        content: "Every storm runs out of rain.",
-        writer: "folklore",
-      },
-      bgCode: "bg-slate-600",
-      songUrl: "https://example.com/sad-song-1",
-      todo: ["Take a walk", "Journal your thoughts"],
-    },
-
-    iframe use korbo wait for it
-
- */
 const ResponseLayout = ({ emotion, response }) => {
   return (
     <div className="flex flex-col justify-center w-[95%] md:w-[85%]">
@@ -435,20 +433,24 @@ const ResponseLayout = ({ emotion, response }) => {
       </div>
 
       {/**song  part converting  embedding part suks*/}
-      <div className="aspect-video my-2">
-        <div className="text-md text-white italic p-1">
-          Here's a song for your mood:
+      {response.songUrl && (
+        <div className="aspect-video my-2">
+          <div className="text-md text-white italic p-1">
+            Here's a song for your mood:
+          </div>
+          <iframe
+            className="w-full h-full rounded-md"
+            src={`https://www.youtube.com/embed/${
+              response.songUrl.includes("v=")
+                ? response.songUrl.split("v=")[1]?.split("&")[0]
+                : response.songUrl
+            }`}
+            title="Mood Song"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
-        <iframe
-          className="w-full h-full rounded-md"
-          src={`https://www.youtube.com/embed/${
-            response.songUrl.split("v=")[1]
-          }`}
-          title="Relaxing Beach Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
+      )}
 
       {/**To do part */}
       <div className="mb-2 mt-8">
@@ -499,19 +501,26 @@ const ResponseLayout = ({ emotion, response }) => {
 
 const InputBox = ({ emotion, openSesame, setEmotion }) => {
   const handleError = () => {
-    setEmotion(emotion.trim());
+    const trimmedEmotion = emotion.trim();
     if (
-      emotion !== "Sad" &&
-      emotion !== "Happy" &&
-      emotion !== "Angry" &&
-      emotion !== "Lost" &&
-      emotion !== "Scared"
+      trimmedEmotion !== "Sad" &&
+      trimmedEmotion !== "Happy" &&
+      trimmedEmotion !== "Angry" &&
+      trimmedEmotion !== "Lost" &&
+      trimmedEmotion !== "Scared"
     ) {
       toast.error("Please choose a valid option");
       return;
     }
     openSesame();
   };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleError();
+    }
+  };
+
   return (
     <div
       className=" border-[.5px] my-4 border-black rounded-md 
@@ -521,13 +530,13 @@ const InputBox = ({ emotion, openSesame, setEmotion }) => {
         value={emotion}
         type="text"
         onChange={(e) => setEmotion(e.target.value)}
-        onSubmit={(val) => setEmotion(val)}
+        onKeyPress={handleKeyPress}
         placeholder="emotion name ..."
         className="p-2  w-full bg-yellow-100/40 rounded-l-md"
       />
       <button
         onClick={handleError}
-        type="submit"
+        type="button"
         className="py-1 px-2 rounded-r-md hover:scale-105 
       transition-all
       duration-200 ease-in-out active:scale-90 bg-secondary  text-white"

@@ -3,8 +3,10 @@ import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { MdLogout } from "react-icons/md";
 import { FaUserCircle } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/authContext";
 
 const Navbar = () => {
   const [openPop, setOpenPop] = useState(false);
@@ -49,6 +51,26 @@ const Navbar = () => {
 export default Navbar;
 
 const Popup = ({ openPop, closePop }) => {
+  const { user, setUser } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      const res = await fetch("http://localhost:3000/api/auth/logout", {
+        method: "POST",
+        credentials: "include",
+      });
+
+      if (!res.ok) throw new Error("Logout failed");
+      setUser(null);
+      toast.success("Logged out successfully");
+      closePop();
+    } catch (err) {
+      console.error(err);
+      toast.error("Error logging out");
+      closePop();
+    }
+  };
+
   return (
     <div className="h-[100vh] flex items-center justify-center top-0 w-[100vw] bg-black bg-opacity-50 z-50 fixed">
       <div
@@ -133,7 +155,7 @@ const Popup = ({ openPop, closePop }) => {
             </button>
           </Link>
           <button
-            onClick={closePop}
+            onClick={handleLogout}
             className="border hover:text-white rounded-md mb-4 hover:bg-red-600 bg-white text-red-600  w-full py-2
           active:scale-90  transition-all duration-200 flex justify-between px-3 items-center"
           >

@@ -33,7 +33,7 @@ export const getUserHistoryController = async (req, res) => {
       },
     });
     //user.pastChoices
-    if (!user) {
+    if (!gottenUser) {
       return res.status(404).json({
         error: "User not logged in",
       });
@@ -42,7 +42,7 @@ export const getUserHistoryController = async (req, res) => {
     res.status(200).json(gottenUser.pastChoices);
   } catch (error) {
     console.error("getting user history controller Error:", error.message);
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(500).json({ error: "Internal Server Error history" });
   }
 };
 

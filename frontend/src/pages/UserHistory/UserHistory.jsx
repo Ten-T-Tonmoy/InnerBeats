@@ -13,7 +13,7 @@ const UserHistory = () => {
   useEffect(() => {
     const getHistory = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/gethistory", {
+        const res = await fetch("http://localhost:3000/api/user/gethistory", {
           credentials: "include",
         });
         if (!res.ok) {
@@ -38,7 +38,7 @@ const UserHistory = () => {
     getHistory();
   }, []);
 
-  if (isLogged) {
+  if (isLogged === false) {
     return (
       <div className="flex-1 flex py-32 items-center justify-center bg-primary min-h-[60vh]">
         <div className="bg-white rounded-md shadow-xl p-8 max-w-md text-center">
@@ -92,7 +92,9 @@ const UserHistory = () => {
           {userHistory.map((choice) => (
             <li
               key={choice.id}
-              className="p-4 rounded-lg shadow flex flex-col md:flex-row justify-between items-start md:items-center bg-primary hover:shadow-lg transition-shadow"
+              className="p-4 w-[80vw] md:w-[60vw] rounded-lg shadow flex flex-col
+               md:flex-row justify-between items-start md:items-center
+                bg-gray-200 hover:shadow-lg transition-shadow"
             >
               <div>
                 <p className="font-semibold text-secondary">

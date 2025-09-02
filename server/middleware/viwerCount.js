@@ -9,7 +9,7 @@ export const viewerCount = async (req, res, next) => {
         ),
       },
     });
-    console.log("Viewer added");
+    // console.log("Viewer added");
   } catch (err) {
     console.error("Visitor tracking error:", err.message);
   }

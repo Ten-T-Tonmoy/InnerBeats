@@ -90,8 +90,9 @@ export const loginController = async (req, res) => {
 
 export const getUserController = async (req, res) => {
   try {
+    console.log("user 000000", req.user);
     const user = await prisma.user.findUnique({
-      where: { id: req.userId },
+      where: { id: req.user.id },
       select: {
         id: true,
         name: true,
@@ -119,12 +120,11 @@ export const getUserCount = async (req, res) => {
   }
 };
 
-
 //--------------------------------get user------------------------------
 
 export const getUser = async (req, res) => {
   try {
-    const userId = req.user.id;  
+    const userId = req.user.id;
 
     const user = await prisma.user.findUnique({
       where: { id: userId },
@@ -137,7 +137,7 @@ export const getUser = async (req, res) => {
         facebook: true,
         phone: true,
         profilePhoto: true,
-        pastChoices: true,  
+        pastChoices: true,
       },
     });
 
@@ -149,5 +149,22 @@ export const getUser = async (req, res) => {
   } catch (error) {
     console.log("getUser controller Error:", error.message);
     res.status(500).json({ error: "Internal Server Error" });
+  }
+};
+
+//----------------------------logOut------------------------------------
+
+export const logoutController = (req, res) => {
+  try {
+    res.clearCookie("jwt", {
+      httpOnly: true,
+      sameSite: "lax",
+      secure: false,
+    });
+
+    res.status(200).json({ message: "Logged out successfully" });
+  } catch (err) {
+    console.error("Logout error:", err.message);
+    res.status(500).json({ error: "Internal server error" });
   }
 };

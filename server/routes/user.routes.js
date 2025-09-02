@@ -10,7 +10,7 @@ import { getUserCount } from "../controllers/auth.controller.js";
 const userRouter = new Router();
 
 userRouter.get("/allusers", getAllUsersController);
-userRouter.post("/addhistroy", authCheckMiddleware, addToHistoryController);
-userRouter.get("/gethistroy", authCheckMiddleware, getUserHistoryController);
+userRouter.post("/addhistory", authCheckMiddleware, addToHistoryController);
+userRouter.get("/gethistory", authCheckMiddleware, getUserHistoryController);
 userRouter.get("/usercount", getUserCount);
 export default userRouter;

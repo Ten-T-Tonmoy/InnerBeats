@@ -1176,7 +1176,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["Write down your values", "Take a different route home"],
       },
       {
@@ -1190,7 +1191,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-1-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["List what you're curious about", "Explore a new interest"],
       },
       {
@@ -1205,7 +1207,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-1-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: [
           "Accept where you are right now",
           "Practice being comfortable with unknowing",
@@ -1223,7 +1226,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-1-v6",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["Write down your biggest questions", "Celebrate your curiosity"],
       },
       {
@@ -1239,7 +1243,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-1-v7",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["Breathe through uncertainty", "Trust that clarity will come"],
       },
     ],
@@ -1255,7 +1260,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://www.youtube.com/watch?v=xFYQQPAOz7Y",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["Try something new today", "Ask someone about their journey"],
       },
       {
@@ -1270,7 +1276,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-2-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["Take one small action today", "Focus on the present moment"],
       },
       {
@@ -1285,7 +1292,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-2-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["Do something imperfectly", "Celebrate small wins"],
       },
       {
@@ -1301,7 +1309,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-2-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["Take one tiny step today", "Be patient with your pace"],
       },
       {
@@ -1317,7 +1326,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-2-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
         todo: ["Focus on effort over outcome", "Trust your journey"],
       },
     ],

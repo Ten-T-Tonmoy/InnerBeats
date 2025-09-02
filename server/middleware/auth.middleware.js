@@ -4,17 +4,19 @@ import { prisma } from "../config/prisma.js";
 //--------------hands out the user -pass------------------------
 export const authCheckMiddleware = async (req, res, next) => {
   try {
-    const token = req.cookies?.token;
+    const token = req.cookies.jwt;
 
     if (!token)
       return res.status(401).json({
         error: "Token not found! Unauthorized",
       });
 
-    const tokenDecoded = jwt.verify(
-      token,
-      process.env.JWT_SECRET || "supersecret"
-    );
+    let decodedToken;
+    try {
+      decodedToken = jwt.verify(token, process.env.JWT_SECRET);
+    } catch (err) {
+      return res.status(401).json({ error: "Invalid or expired token" });
+    }
 
     if (!decodedToken) {
       return res.status(401).json({
@@ -39,6 +41,7 @@ export const authCheckMiddleware = async (req, res, next) => {
       });
     }
     req.user = decodedUser;
+    console.log("Decoded user here :", decodedUser);
     next();
   } catch (e) {
     console.log("protectRoute authenticating Error", e.message);

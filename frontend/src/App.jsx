@@ -11,8 +11,11 @@ import Assistant from "./pages/Ai/Assistant";
 import { Login } from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import UserHistory from "./pages/UserHistory/UserHistory";
+import { useAuth } from "./context/authContext";
 
 const App = () => {
+  const { user, loading } = useAuth();
+  // console.log("authenticated", user);
   return (
     <div className="overflow-x-hidden min-h-screen flex flex-col justify-between">
       <Toaster position="top-center" reverseOrder={false} />
@@ -23,10 +26,12 @@ const App = () => {
         <Route path="/home" element={<Landingpage />} />
         <Route path="/doctors" element={<Doctorspage />} />
         <Route path="/ai" element={<Assistant />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={user ? <Landingpage /> : <Login />} />
+        <Route path="/signup" element={user ? <Landingpage /> : <SignUp />} />
+        <Route path="/login" element={user ? <Landingpage /> : <Login />} />
         <Route path="/history" element={<UserHistory />} />
       </Routes>
+
       <Footer />
     </div>
   );
