@@ -19,15 +19,16 @@ datasource db {
 }
 
 model User {
-  id           Int     @id @default(autoincrement())
+  id           Int       @id @default(autoincrement())
   name         String
-  email        String  @unique
+  email        String    @unique
   password     String
   photos       Photo[]
   whatsapp     String?
   facebook     String?
   phone        String?
   profilePhoto String?
+  pastChoices  Choices[]
 }
 
 model Photo {
@@ -36,4 +37,19 @@ model Photo {
   url      String
   uploader User?   @relation(fields: [userId], references: [id])
   userId   Int?
+}
+
+model Visitor {
+  id        Int      @id @default(autoincrement())
+  ip        String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Choices {
+  id           Int     @id @default(autoincrement())
+  emotion      String
+  ChosenReason String
+  isHelpful    Boolean
+  User         User?   @relation(fields: [userId], references: [id])
+  userId       Int?
 }

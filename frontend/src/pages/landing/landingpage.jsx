@@ -190,6 +190,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
         <div
           className={` text-white py-2 px-4
             flex justify-between items-center
+            font-sans
 
           ${
             emotion === "Angry"
@@ -263,7 +264,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
           {response.bgCode === "" && (
             <Link to="/ai" className="w-[90%] ">
               <div
-                className={` bg-gray-300 font-mono  px-3 py-3 text-[1.1rem] 
+                className={` bg-gray-300   px-3 py-3 text-[1.1rem] 
                 cursor-pointer  active:scale-90 rounded-md ease-in-out transition-all
                 duration-300  flex justify-between items-center shadow-md
                 ${
@@ -301,6 +302,7 @@ const PopUp = ({ emotion, setOpenPop, response, setResponse }) => {
                   className={` w-[90%] text-[1.05rem] sm:text-[1rem]
             cursor-pointer py-3 px-4 text-white  bg-opacity-50
             rounded-md hover:scale-105 hover:bg-opacity-100 shadow-lg
+            capitalize
             ${
               emotion === "Angry"
                 ? "bg-red-600"
