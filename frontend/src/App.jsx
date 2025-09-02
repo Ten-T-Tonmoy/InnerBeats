@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 import Assistant from "./pages/Ai/Assistant";
 import { Login } from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
+import UserHistory from "./pages/UserHistory/UserHistory";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/ai" element={<Assistant />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/history" element={<UserHistory />} />
       </Routes>
       <Footer />
     </div>

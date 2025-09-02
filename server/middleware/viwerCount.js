@@ -2,20 +2,30 @@ import { prisma } from "../config/prisma.js";
 
 export const viewerCount = async (req, res, next) => {
   try {
-    const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
-
-    const existing = await prisma.visitor.findUnique({
-      where: { ip: String(ip) },
+    await prisma.visitor.create({
+      data: {
+        ip: String(
+          req.headers["x-forwarded-for"] || req.connection.remoteAddress
+        ),
+      },
     });
-
-    if (!existing) {
-      await prisma.visitor.create({
-        data: { ip: String(ip) },
-      });
-      console.log("Viewer added");
-    }
+    console.log("Viewer added");
   } catch (err) {
     console.error("Visitor tracking error:", err.message);
   }
   next();
+};
+
+export const siteVisited = async (req, res) => {
+  try {
+    await prisma.visitor.create({
+      data: {
+        ip: req.headers["x-forwarded-for"] || req.connection.remoteAddress,
+      },
+    });
+    res.status(201).json({ message: "Viewer added" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Internal server error" });
+  }
 };

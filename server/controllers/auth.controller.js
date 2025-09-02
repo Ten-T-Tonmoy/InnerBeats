@@ -107,3 +107,47 @@ export const getUserController = async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
+
+//--------------------------getUserCount-------------------------
+export const getUserCount = async (req, res) => {
+  try {
+    const totalVolunteers = await prisma.user.count();
+    res.status(200).json({ totalVolunteers });
+  } catch (error) {
+    console.log(" getUserNumber controller Error", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+};
+
+
+//--------------------------------get user------------------------------
+
+export const getUser = async (req, res) => {
+  try {
+    const userId = req.user.id;  
+
+    const user = await prisma.user.findUnique({
+      where: { id: userId },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        photos: true,
+        whatsapp: true,
+        facebook: true,
+        phone: true,
+        profilePhoto: true,
+        pastChoices: true,  
+      },
+    });
+
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    res.status(200).json(user);
+  } catch (error) {
+    console.log("getUser controller Error:", error.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+};

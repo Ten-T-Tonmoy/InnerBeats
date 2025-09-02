@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
+import { MdVolunteerActivism } from "react-icons/md";
 
 const AdditionalHelp = () => {
   const [volunteers, setVolunteers] = useState(null);
@@ -55,6 +56,10 @@ const AdditionalHelp = () => {
             <a href={el.facebookUrl} className="hover:text-secondary">
               {el.facebook}
             </a>
+          </p>
+          <p className="text-gray-700 font-medium  gap-3 flex justify-start w-full items-centers">
+            <MdVolunteerActivism className="text-[1.4rem] text-blue-500 " />
+            <p className="hover:text-secondary">Volunteer</p>
           </p>
         </div>
       ))}

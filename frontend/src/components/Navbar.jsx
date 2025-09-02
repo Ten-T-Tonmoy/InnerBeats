@@ -58,7 +58,7 @@ const Popup = ({ openPop, closePop }) => {
       >
         <button
           onClick={closePop}
-          className="border text-white rounded-md mb-4 bg-red-600 hover:bg-white hover:text-red-600 w-full py-1
+          className="border hover:text-white rounded-md mb-4 hover:bg-red-600 bg-white text-red-600 w-full py-1
           active:scale-90 transition-all duration-200 flex justify-between px-3 items-center"
         >
           <p className=" font-sans font-bold">Close Menu</p>
@@ -71,7 +71,7 @@ const Popup = ({ openPop, closePop }) => {
         <div className="flex  font-bold font-sans flex-col gap-[6px]">
           <Link to="/home">
             <button
-              className="bg-primary w-[60vw] md:w-[35vw] lg:w-[25vw] text-start text-secondary hover:bg-opacity-60 rounded-md 
+              className="bg-primary w-[70vw] md:w-[38vw] lg:w-[28vw] text-start text-secondary hover:bg-opacity-60 rounded-md 
              py-1 px-4 border  active:scale-90 transition-all duration-200"
               onClick={closePop}
             >
@@ -87,13 +87,13 @@ const Popup = ({ openPop, closePop }) => {
               Log in
             </button>
           </Link>
-          <Link to="/gallery">
+          <Link to="/history">
             <button
               className="bg-primary text-secondary hover:bg-opacity-60 rounded-md 
              py-1 px-4 text-start border w-full active:scale-90 transition-all duration-200"
               onClick={closePop}
             >
-              Photo Gallery
+              History
             </button>
           </Link>
           <Link to="/signup">
@@ -134,7 +134,7 @@ const Popup = ({ openPop, closePop }) => {
           </Link>
           <button
             onClick={closePop}
-            className="border text-white rounded-md mb-4 bg-red-600 hover:bg-white hover:text-red-600 w-full py-2
+            className="border hover:text-white rounded-md mb-4 hover:bg-red-600 bg-white text-red-600  w-full py-2
           active:scale-90  transition-all duration-200 flex justify-between px-3 items-center"
           >
             <p className=" font-sans font-bold">Log Out</p>

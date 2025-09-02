@@ -13,6 +13,18 @@ yarn-error.log*
 .env
 .env.*  # covers .env.local, .env.production, etc.
 
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+prisma/*.sqlite
+prisma/*.sqlite-journal
+prisma/migrations/
+
+# If you’re using SQLite for local dev
+*.db
+*.db-journal
+
+
 # OS-specific files
 .DS_Store
 Thumbs.db

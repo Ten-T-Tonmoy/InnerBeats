@@ -6,7 +6,7 @@ import { simpleCors } from "./config/cors.js";
 import authRouter from "./routes/auth.routes.js";
 import userRouter from "./routes/user.routes.js";
 import cookieParser from "cookie-parser";
-import { viewerCount } from "./middleware/viwerCount.js";
+import { siteVisited, viewerCount } from "./middleware/viwerCount.js";
 import { prisma } from "./config/prisma.js";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env") });
@@ -40,6 +40,7 @@ app.get("/api/visitors/totalcount", async (req, res) => {
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
+app.post("/api/viewing", siteVisited);
 
 app.listen(PORT, () => {
   console.log(`Server Running on port : ${PORT}`);

@@ -41,15 +41,16 @@ model Photo {
 
 model Visitor {
   id        Int      @id @default(autoincrement())
-  ip        String   @unique
+  ip        String
   createdAt DateTime @default(now())
 }
 
 model Choices {
-  id           Int     @id @default(autoincrement())
+  id           Int      @id @default(autoincrement())
   emotion      String
   ChosenReason String
   isHelpful    Boolean
-  User         User?   @relation(fields: [userId], references: [id])
+  User         User?    @relation(fields: [userId], references: [id])
   userId       Int?
+  createdAt    DateTime @default(now())
 }

@@ -41,6 +41,11 @@ const page = () => {
             Doctors
           </button>
         </Link>
+        <Link to="/history" className="w-full">
+          <button className="bg-stone-500 p-2 text-white rounded-md w-full">
+            History
+          </button>
+        </Link>
       </div>
       <h1 className="p-4 text-xl ">
         Ignore this part if not a Dev and click on buttons to redirect

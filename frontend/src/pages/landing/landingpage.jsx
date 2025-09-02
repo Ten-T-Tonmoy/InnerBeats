@@ -19,7 +19,7 @@ import { IoMdArrowBack } from "react-icons/io";
 //logic imports and shits
 
 import { request } from "../../utils/requestDb.js";
-import { response } from "../../utils/responseDb.js";
+// import { response } from "../../utils/responseDb.js";
 import { getResult } from "../../hooks/useResponse";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
@@ -47,8 +47,39 @@ export default function page() {
 
   //since state change is asynchronus so yeah
   useEffect(() => {
-    console.log("New response:", response);
+    // console.log("New response:", response);
+    // const handleAddToHistory = async () => {
+    //   try {
+    //     const res = await fetch("http://localhost:3000/api/choices", {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/json" },
+    //       credentials: "include", // JWT cookie
+    //       body: JSON.stringify({ emotion, option, isHelpful }),
+    //     });
+    //     if (!res.ok) throw new Error("Failed to add choice");
+    //     const updatedUser = await res.json();
+    //     setUserHistory(updatedUser.pastChoices || []);
+    //     setEmotion("");
+    //     setOption("");
+    //     setIsHelpful(false);
+    //     toast.success("Choice added!");
+    //   } catch (err) {
+    //     console.error(err);
+    //     toast.error("Error adding choice");
+    //   } finally {
+    //     setLoading(false);
+    //   }
+    // };
   }, [response]);
+
+  useEffect(() => {
+    if (!sessionStorage.getItem("viewed")) {
+      fetch("http://localhost:3000/api/viewing", { method: "POST" }).catch(
+        (err) => console.error(err)
+      );
+      sessionStorage.setItem("viewed", "true");
+    }
+  }, []);
   return (
     <div className="bg-primary flex flex-col items-center pt-20">
       {openPop && (

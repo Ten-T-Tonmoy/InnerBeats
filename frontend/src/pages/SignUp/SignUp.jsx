@@ -8,6 +8,9 @@ const SignUp = () => {
     name: "",
     email: "",
     password: "",
+    facebook: "",
+    whatsapp: "",
+    phone: "",
     confirmPassword: "",
   });
   const [loading, setLoading] = useState(false);
@@ -35,17 +38,20 @@ const SignUp = () => {
           name: form.name,
           email: form.email,
           password: form.password,
+          facebook: form.facebook,
+          whatsapp: form.whatsapp,
+          phone: form.whatsapp,
         }),
       });
 
       if (!res.ok) throw new Error("Registration failed/Invalid credentials");
       const data = await res.json();
       console.log("Registered:", data);
+      toast.success("Registered Successfully!");
     } catch (err) {
       console.error("error occured while registration", err.message);
     } finally {
       setLoading(false);
-      toast.success("Registered Successfully!");
       navigate("/home");
     }
   };
@@ -95,11 +101,45 @@ const SignUp = () => {
               placeholder="example123@hotmail.com"
               name="email"
               className="mt-1 w-full rounded-md outline-none border border-gray-300
-               bg-primary px-3 py-2 text-footer focus:border-secondary
-                focus:ring-2 focus:ring-secondary"
+      bg-primary px-3 py-2 text-footer focus:border-secondary
+      focus:ring-2 focus:ring-secondary"
               value={form.email}
               onChange={handleChange}
               required
+            />
+          </div>
+
+          {/* ------------------------------whatsapp-----------------------------*/}
+          <div>
+            <label className="block text-sm font-medium text-footer">
+              WhatsApp
+            </label>
+            <input
+              type="text"
+              placeholder="+8801234567890"
+              name="whatsapp"
+              className="mt-1 w-full rounded-md outline-none border border-gray-300
+      bg-primary px-3 py-2 text-footer focus:border-secondary
+      focus:ring-2 focus:ring-secondary"
+              value={form.whatsapp}
+              onChange={handleChange}
+            />
+          </div>
+
+          {/* ------------------------------facebook-----------------------------*/}
+          <div>
+            <label className="block text-sm font-medium text-footer">
+              Facebook Username
+            </label>
+            <input
+              type="text"
+              placeholder="your.fb.username"
+              name="facebook"
+              className="mt-1 w-full rounded-md outline-none border border-gray-300
+      bg-primary px-3 py-2 text-footer focus:border-secondary
+      focus:ring-2 focus:ring-secondary"
+              value={form.facebook}
+              onChange={handleChange}
             />
           </div>
 
