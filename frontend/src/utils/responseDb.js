@@ -33,7 +33,8 @@ export const response = {
           writer: "folklore",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=NdYWuo9OFAw&list=RDNdYWuo9OFAw&start_radio=1",
         todo: ["Take a walk", "Journal your thoughts"],
       },
       {
@@ -46,7 +47,8 @@ export const response = {
           writer: "Paulo Coelho",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-1-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=NdYWuo9OFAw&list=RDNdYWuo9OFAw&start_radio=1",
         todo: ["Write in a diary", "Call someone who cares"],
       },
       {
@@ -60,7 +62,8 @@ export const response = {
           writer: "Native American Proverb",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-1-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=NdYWuo9OFAw&list=RDNdYWuo9OFAw&start_radio=1",
         todo: ["Breathe deeply", "Share your feelings with a friend"],
       },
       {
@@ -75,7 +78,8 @@ export const response = {
           writer: "Christopher Morley",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-1-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=NdYWuo9OFAw&list=RDNdYWuo9OFAw&start_radio=1",
         todo: ["Listen to your heart", "Reach out for support"],
       },
       {
@@ -88,7 +92,8 @@ export const response = {
           writer: "Alfred Austin",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-1-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=NdYWuo9OFAw&list=RDNdYWuo9OFAw&start_radio=1",
         todo: ["Practice emotional honesty", "Find your support system"],
       },
     ],
@@ -103,7 +108,8 @@ export const response = {
           writer: "Rumi",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Call a friend", "Listen to calming music"],
       },
       {
@@ -116,7 +122,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-2-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Practice meditation", "Read something uplifting"],
       },
       {
@@ -129,7 +136,8 @@ export const response = {
           writer: "Fyodor Dostoevsky",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-2-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Practice patience", "Focus on small progress"],
       },
       {
@@ -142,7 +150,8 @@ export const response = {
           writer: "Buddha",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-2-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Embrace impermanence", "Look for signs of growth"],
       },
       {
@@ -155,7 +164,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-2-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: [
           "Visualize your future self",
           "Write a letter to tomorrow's you",
@@ -174,7 +184,8 @@ export const response = {
           writer: "Washington Irving",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Write down 3 things you're grateful for", "Take a warm bath"],
       },
       {
@@ -187,7 +198,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-3-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Practice self-forgiveness", "Do something nurturing"],
       },
       {
@@ -202,7 +214,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-3-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Practice positive self-talk", "Give yourself a hug"],
       },
       {
@@ -217,7 +230,8 @@ export const response = {
           writer: "Buddha",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-3-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Practice mindful self-care", "Acknowledge your efforts"],
       },
       {
@@ -230,7 +244,8 @@ export const response = {
           writer: "Oscar Wilde",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-3-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=1lrFsXkT_rM&list=RD1lrFsXkT_rM&start_radio=1",
         todo: ["Create a self-love ritual", "Celebrate small victories"],
       },
     ],
@@ -245,7 +260,8 @@ export const response = {
           writer: "Queen Elizabeth II",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=7jMlFXouPk8&list=RD7jMlFXouPk8&start_radio=1",
         todo: ["Watch a comfort movie", "Hug a pet or loved one"],
       },
       {
@@ -258,7 +274,8 @@ export const response = {
           writer: "Terry Tempest Williams",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-4-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=7jMlFXouPk8&list=RD7jMlFXouPk8&start_radio=1",
         todo: ["Join a support group", "Volunteer to help others"],
       },
       {
@@ -272,7 +289,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-4-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=7jMlFXouPk8&list=RD7jMlFXouPk8&start_radio=1",
         todo: ["Text someone you trust", "Attend a social gathering"],
       },
       {
@@ -286,7 +304,8 @@ export const response = {
           writer: "H.E. Luccock",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-4-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=7jMlFXouPk8&list=RD7jMlFXouPk8&start_radio=1",
         todo: ["Schedule coffee with a friend", "Share your story"],
       },
       {
@@ -299,7 +318,8 @@ export const response = {
           writer: "Ram Dass",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-4-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=7jMlFXouPk8&list=RD7jMlFXouPk8&start_radio=1",
         todo: ["Reach out to family", "Consider professional help"],
       },
     ],
@@ -314,7 +334,8 @@ export const response = {
           writer: "Thomas Fuller",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Get enough sleep", "Plan something small to look forward to"],
       },
       {
@@ -327,7 +348,8 @@ export const response = {
           writer: "Emily Dickinson",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-5-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: [
           "Set a small goal for tomorrow",
           "Look at photos that make you smile",
@@ -344,7 +366,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-5-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Watch the sunrise", "Make tomorrow's to-do list"],
       },
       {
@@ -358,7 +381,8 @@ export const response = {
           writer: "Chinese Proverb",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-5-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Plan a small adventure", "Write down your dreams"],
       },
       {
@@ -372,7 +396,8 @@ export const response = {
           writer: "Eleanor Roosevelt",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-5-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: [
           "Visualize your ideal tomorrow",
           "Take one step toward your goals",
@@ -391,7 +416,8 @@ export const response = {
           writer: "Robert Frost",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-6",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Practice deep breathing", "Create something with your hands"],
       },
       {
@@ -405,7 +431,8 @@ export const response = {
           writer: "Joseph Campbell",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-6-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: [
           "Reflect on what you've learned",
           "Express yourself through art",
@@ -423,7 +450,8 @@ export const response = {
           writer: "Rumi",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-6-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Journal about your feelings", "Practice mindfulness"],
       },
       {
@@ -437,7 +465,8 @@ export const response = {
           writer: "Carl Jung",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-6-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: [
           "Explore your emotions without judgment",
           "Practice emotional acceptance",
@@ -455,7 +484,8 @@ export const response = {
           writer: "Zen Proverb",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/sad-song-6-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Sit in quiet contemplation", "Honor your emotional depth"],
       },
     ],
@@ -472,7 +502,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/sad-song-7",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Do one small act of self-care", "Step outside for fresh air"],
       },
       {
@@ -486,7 +517,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/sad-song-7-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: [
           "Celebrate one small win today",
           "Take things one moment at a time",
@@ -504,7 +536,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/sad-song-7-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Focus on the present moment", "Complete one simple task"],
       },
       {
@@ -520,7 +553,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/sad-song-7-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: ["Set micro-goals", "Practice self-patience"],
       },
       {
@@ -534,7 +568,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/sad-song-7-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=qnkuBUAwfe0&list=RDqnkuBUAwfe0&start_radio=1",
         todo: [
           "Acknowledge your efforts",
           "Take just one small positive action",
@@ -554,7 +589,8 @@ export const response = {
           writer: "Marcus Aurelius",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=YLHpvjrFpe0&list=RDYLHpvjrFpe0&start_radio=1",
         todo: ["Punch a pillow", "Do some pushups"],
       },
       {
@@ -568,7 +604,8 @@ export const response = {
           writer: "Thich Nhat Hanh",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-1-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=YLHpvjrFpe0&list=RDYLHpvjrFpe0&start_radio=1",
         todo: ["Practice 4-7-8 breathing", "Count your breaths to 20"],
       },
       {
@@ -581,7 +618,8 @@ export const response = {
           writer: "Thich Nhat Hanh",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-1-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=YLHpvjrFpe0&list=RDYLHpvjrFpe0&start_radio=1",
         todo: ["Take 10 deep belly breaths", "Focus on your breathing rhythm"],
       },
       {
@@ -596,7 +634,8 @@ export const response = {
           writer: "Marcus Aurelius",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-1-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=YLHpvjrFpe0&list=RDYLHpvjrFpe0&start_radio=1",
         todo: ["Practice box breathing", "Breathe and visualize calm"],
       },
       {
@@ -609,7 +648,8 @@ export const response = {
           writer: "Buddha",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-1-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=YLHpvjrFpe0&list=RDYLHpvjrFpe0&start_radio=1",
         todo: ["Breathe with intention", "Find your breathing anchor"],
       },
     ],
@@ -626,7 +666,8 @@ export const response = {
           writer: "Mark Twain",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=9Oa_mWpckns&list=RD9Oa_mWpckns&start_radio=1",
         todo: ["Go for a run", "Write an angry letter (don't send it)"],
       },
       {
@@ -639,7 +680,8 @@ export const response = {
           writer: "Abraham Lincoln",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-2-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=9Oa_mWpckns&list=RD9Oa_mWpckns&start_radio=1",
         todo: ["Start a positive project", "Volunteer for a cause"],
       },
       {
@@ -654,7 +696,8 @@ export const response = {
           writer: "Benjamin Franklin",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-2-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=9Oa_mWpckns&list=RD9Oa_mWpckns&start_radio=1",
         todo: ["Create art from your feelings", "Plan a positive change"],
       },
       {
@@ -668,7 +711,8 @@ export const response = {
           writer: "Mahatma Gandhi",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-2-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=9Oa_mWpckns&list=RD9Oa_mWpckns&start_radio=1",
         todo: ["Focus on problem-solving", "Take constructive action"],
       },
       {
@@ -682,7 +726,8 @@ export const response = {
           writer: "Albert Einstein",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-2-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=9Oa_mWpckns&list=RD9Oa_mWpckns&start_radio=1",
         todo: ["Identify what needs changing", "Channel energy into advocacy"],
       },
     ],
@@ -699,7 +744,8 @@ export const response = {
           writer: "Ralph Waldo Emerson",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=9Oa_mWpckns&list=RD9Oa_mWpckns&start_radio=1",
         todo: ["Take 10 slow deep breaths", "Clench and release your fists"],
       },
       {
@@ -713,7 +759,8 @@ export const response = {
           writer: "Viktor Frankl",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-3-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=9Oa_mWpckns&list=RD9Oa_mWpckns&start_radio=1",
         todo: ["Count backwards from 20", "Take three deep breaths"],
       },
       {
@@ -726,7 +773,8 @@ export const response = {
           writer: "Fran Lebowitz",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-3-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=9Oa_mWpckns&list=RD9Oa_mWpckns&start_radio=1",
         todo: [
           "Wait 5 minutes before responding",
           "Practice the STOP technique",
@@ -743,7 +791,8 @@ export const response = {
           writer: "Joyce Meyer",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-3-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Practice mindful waiting", "Observe before reacting"],
       },
       {
@@ -758,7 +807,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-3-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Reflect before responding", "Choose wisdom over impulse"],
       },
     ],
@@ -775,7 +825,8 @@ export const response = {
           writer: "Krista Tippett",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Identify what triggered you", "Talk to someone you trust"],
       },
       {
@@ -790,7 +841,8 @@ export const response = {
           writer: "Rumi",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-4-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: [
           "Ask 'What am I really feeling?'",
           "Journal about underlying emotions",
@@ -808,7 +860,8 @@ export const response = {
           writer: "Carl Rogers",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-4-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Map your anger triggers", "Reflect on recurring patterns"],
       },
       {
@@ -822,7 +875,8 @@ export const response = {
           writer: "Carl Jung",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-4-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Explore what you need", "Dig deeper into your feelings"],
       },
       {
@@ -837,7 +891,8 @@ export const response = {
           writer: "Carl Jung",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-4-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Listen to your anger's message", "Honor what matters to you"],
       },
     ],
@@ -853,7 +908,8 @@ export const response = {
           writer: "Ambrose Bierce",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Do jumping jacks", "Scream into a pillow"],
       },
       {
@@ -867,7 +923,8 @@ export const response = {
           writer: "Women's Health UK",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-5-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Go for a vigorous walk", "Dance to energetic music"],
       },
       {
@@ -880,7 +937,8 @@ export const response = {
           writer: "Leigh Hunt",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-5-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Run up and down stairs", "Do burpees for 2 minutes"],
       },
       {
@@ -895,7 +953,8 @@ export const response = {
           writer: "Mahatma Gandhi",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-5-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Do push-ups until exhausted", "Try kickboxing moves"],
       },
       {
@@ -909,7 +968,8 @@ export const response = {
           writer: "Jim Rohn",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-5-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: ["Find your favorite cardio", "Use physical activity as therapy"],
       },
     ],
@@ -925,7 +985,8 @@ export const response = {
           writer: "Lao Tzu",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-6",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: [
           "List what you can and can't control",
           "Practice progressive muscle relaxation",
@@ -942,7 +1003,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-6-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=uPMLAdoGU0k&list=RDuPMLAdoGU0k&start_radio=1",
         todo: [
           "Evaluate if this is worth your energy",
           "Focus on what you can influence",
@@ -959,7 +1021,8 @@ export const response = {
           writer: "Marcus Aurelius",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-6-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: [
           "Assess the importance of this issue",
           "Save energy for what matters",
@@ -975,7 +1038,8 @@ export const response = {
           writer: "William James",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-6-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: [
           "Decide if response is necessary",
           "Choose your reactions carefully",
@@ -992,7 +1056,8 @@ export const response = {
           writer: "Stephen Covey",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/angry-song-6-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Clarify your priorities", "Focus on your core values"],
       },
     ],
@@ -1008,7 +1073,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
-        songUrl: "https://example.com/angry-song-7",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Take a cold shower", "Go somewhere quiet for 15 minutes"],
       },
       {
@@ -1023,7 +1089,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
-        songUrl: "https://example.com/angry-song-7-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Leave the room for 10 minutes", "Take a walk around the block"],
       },
       {
@@ -1038,7 +1105,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
-        songUrl: "https://example.com/angry-song-7-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Go outside for fresh air", "Change your physical environment"],
       },
       {
@@ -1053,7 +1121,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
-        songUrl: "https://example.com/angry-song-7-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: [
           "Set a timer for 20 minutes of quiet time",
           "Find a peaceful environment",
@@ -1071,7 +1140,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
-        songUrl: "https://example.com/angry-song-7-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Listen to calming music", "Do a mental visualization exercise"],
       },
     ],
@@ -1088,7 +1158,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3394939/pexels-photo-3394939.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/angry-song-8",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Clean or organize something", "Do a high-intensity workout"],
       },
       {
@@ -1104,7 +1175,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3394939/pexels-photo-3394939.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/angry-song-8-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: [
           "Start a project you've been putting off",
           "Channel energy into work",
@@ -1122,7 +1194,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3394939/pexels-photo-3394939.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/angry-song-8-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Draw or paint your feelings", "Write poetry or music"],
       },
       {
@@ -1137,7 +1210,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3394939/pexels-photo-3394939.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/angry-song-8-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: [
           "Brainstorm three possible solutions",
           "Take one constructive action",
@@ -1153,7 +1227,7 @@ export const response = {
           writer: "Steve Jobs",
         },
         bgCode:
-          "https://images.pexels.com/photos/3394939/pexels-photo-3394939.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         songUrl: "https://example.com/angry-song-8-v5",
         todo: [
           "Identify what matters to you",
@@ -1177,7 +1251,7 @@ export const response = {
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
         songUrl:
-          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Write down your values", "Take a different route home"],
       },
       {
@@ -1192,7 +1266,7 @@ export const response = {
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
         songUrl:
-          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["List what you're curious about", "Explore a new interest"],
       },
       {
@@ -1208,7 +1282,7 @@ export const response = {
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
         songUrl:
-          "https://www.youtube.com/watch?v=w6Nf5BcAomY&list=RDw6Nf5BcAomY&start_radio=1",
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: [
           "Accept where you are right now",
           "Practice being comfortable with unknowing",
@@ -1344,7 +1418,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-1-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: [
           "Define your core values",
           "Make decisions based on what matters most",
@@ -1363,7 +1438,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-3-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["List your top 5 values", "Align your choices with your values"],
       },
       {
@@ -1378,7 +1454,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-3-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Identify your priorities", "Focus on what truly matters"],
       },
       {
@@ -1394,7 +1471,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-3-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: ["Connect with your authentic self", "Honor your true nature"],
       },
       {
@@ -1409,7 +1487,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-        songUrl: "https://example.com/lost-song-3-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=sLe3xW0FN2M&list=RDsLe3xW0FN2M&start_radio=1",
         todo: [
           "Act according to your values",
           "Let principles guide decisions",
@@ -1430,7 +1509,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-1-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=pGhwBFYtn1s&list=RDpGhwBFYtn1s&start_radio=1",
         todo: [
           "Reflect on past 'detours' that led to good things",
           "Be patient with yourself",
@@ -1447,7 +1527,8 @@ export const response = {
           writer: "Lao Tzu",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=pGhwBFYtn1s&list=RDpGhwBFYtn1s&start_radio=1",
         todo: [
           "Meditate for 10 minutes",
           "Read about someone who inspires you",
@@ -1465,7 +1546,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-4-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=pGhwBFYtn1s&list=RDpGhwBFYtn1s&start_radio=1",
         todo: ["Practice patience", "Trust in perfect timing"],
       },
       {
@@ -1481,7 +1563,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-4-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=pGhwBFYtn1s&list=RDpGhwBFYtn1s&start_radio=1",
         todo: ["Have faith in your journey", "Take the next step with trust"],
       },
       {
@@ -1496,7 +1579,8 @@ export const response = {
           writer: "Lao Tzu",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-4-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=pGhwBFYtn1s&list=RDpGhwBFYtn1s&start_radio=1",
         todo: ["Let go of the need to control", "Flow with life's changes"],
       },
     ],
@@ -1513,7 +1597,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://www.youtube.com/watch?v=xFYQQPAOz7Y",
+        songUrl:
+          "https://www.youtube.com/watch?v=pGhwBFYtn1s&list=RDpGhwBFYtn1s&start_radio=1",
         todo: [
           "Make a list of things you're curious about",
           "Visit somewhere you've never been",
@@ -1531,7 +1616,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-3-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=jGB-16XbpmA&list=RDjGB-16XbpmA&start_radio=1",
         todo: [
           "Talk to someone with a different perspective",
           "Challenge your assumptions",
@@ -1550,7 +1636,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-5-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=jGB-16XbpmA&list=RDjGB-16XbpmA&start_radio=1",
         todo: ["Try something completely new", "Step out of your comfort zone"],
       },
       {
@@ -1565,7 +1652,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-5-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=jGB-16XbpmA&list=RDjGB-16XbpmA&start_radio=1",
         todo: ["Follow your curiosity", "Explore what interests you"],
       },
       {
@@ -1580,7 +1668,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-5-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Stay open to surprises", "Look for hidden opportunities"],
       },
     ],
@@ -1597,7 +1686,8 @@ export const response = {
           writer: "Ralph Waldo Emerson",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-3-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Embrace change as growth", "Write about who you're becoming"],
       },
       {
@@ -1612,7 +1702,8 @@ export const response = {
           writer: "Rabindranath Tagore",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-6-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Journal about your growth", "Celebrate your evolution"],
       },
       {
@@ -1626,7 +1717,8 @@ export const response = {
           writer: "Carl Jung",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-6-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Embrace your becoming", "Trust your transformation"],
       },
       {
@@ -1641,7 +1733,8 @@ export const response = {
           writer: "Catherine Pulsifer",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-6-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Imagine your ideal self", "Take steps toward reinvention"],
       },
       {
@@ -1655,7 +1748,8 @@ export const response = {
           writer: "Oscar Wilde",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-6-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Honor your transformation", "Trust the emergence process"],
       },
     ],
@@ -1672,7 +1766,8 @@ export const response = {
           writer: "Carl Jung",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-3-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Listen to your gut feelings", "Trust your instincts"],
       },
       {
@@ -1687,7 +1782,8 @@ export const response = {
           writer: "Albert Einstein",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-7-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Quiet your mind and listen", "Trust your first instinct"],
       },
       {
@@ -1702,7 +1798,8 @@ export const response = {
           writer: "Sakyong Mipham",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-7-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: [
           "Notice what feels right in your body",
           "Pay attention to physical cues",
@@ -1719,7 +1816,8 @@ export const response = {
           writer: "Albert Camus",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-7-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=DnGdoEa1tPg&list=RDDnGdoEa1tPg&start_radio=1",
         todo: ["Spend time in silence", "Listen to your inner wisdom"],
       },
       {
@@ -1733,7 +1831,8 @@ export const response = {
           writer: "Brian Tracy",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/lost-song-7-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Access your inner knowing", "Trust what feels true"],
       },
     ],
@@ -1751,7 +1850,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-8",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Reach out to a mentor",
           "Ask for advice from someone you trust",
@@ -1770,7 +1870,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-8-alt",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Connect with others on similar journeys",
           "Learn from their experiences",
@@ -1788,7 +1889,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-8-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Join a supportive community",
           "Share your struggles with others",
@@ -1807,7 +1909,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-8-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Seek wisdom from those with experience",
           "Learn from others' journeys",
@@ -1826,7 +1929,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/lost-song-8-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Consider professional guidance", "Invest in your growth"],
       },
     ],
@@ -1844,7 +1948,8 @@ export const response = {
           writer: "A.A. Milne",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Name what you're afraid of", "Take one small brave action"],
       },
       {
@@ -1858,7 +1963,8 @@ export const response = {
           writer: "Søren Kierkegaard",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Practice 5-4-3-2-1 grounding technique",
           "Hold something comforting",
@@ -1876,7 +1982,8 @@ export const response = {
           writer: "Ambrose Redmoon",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-1-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Remind yourself of your strength", "Take three deep breaths"],
       },
       {
@@ -1891,7 +1998,8 @@ export const response = {
           writer: "Dale Carnegie",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-1-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Focus on your five senses", "Practice mindful breathing"],
       },
       {
@@ -1905,7 +2013,8 @@ export const response = {
           writer: "Jack Canfield",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-1-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Visualize success", "Channel fear into determination"],
       },
     ],
@@ -1921,7 +2030,8 @@ export const response = {
           writer: "Franklin D. Roosevelt",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Write down your specific worries",
           "Create a simple action plan",
@@ -1938,7 +2048,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "List past challenges you've overcome",
           "Call someone who believes in you",
@@ -1956,7 +2067,8 @@ export const response = {
           writer: "Martin Luther King Jr.",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-3-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: ["Make a list of small steps", "Focus only on the next step"],
       },
       {
@@ -1969,7 +2081,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-3-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: [
           "Write down your accomplishments",
           "Remember times you were brave",
@@ -1986,7 +2099,8 @@ export const response = {
           writer: "Joseph Campbell",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-3-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: [
           "Ask what this fear is protecting",
           "Find the growth opportunity",
@@ -2006,7 +2120,8 @@ export const response = {
           writer: "Brené Brown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-vulnerable-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: [
           "Acknowledge your vulnerability",
           "Share your fear with someone trusted",
@@ -2024,7 +2139,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-vulnerable-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: ["Celebrate your caring nature", "Use sensitivity as wisdom"],
       },
       {
@@ -2038,7 +2154,8 @@ export const response = {
           writer: "Susan Jeffers",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-vulnerable-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: [
           "Accept your feelings without judgment",
           "Take action despite fear",
@@ -2055,7 +2172,8 @@ export const response = {
           writer: "Mary Tyler Moore",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-vulnerable-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: [
           "Recognize fear as a growth signal",
           "Connect with your inner courage",
@@ -2073,7 +2191,8 @@ export const response = {
           writer: "Mel Robbins",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-vulnerable-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: ["Reflect on your resilience", "Trust your ability to cope"],
       },
     ],
@@ -2089,7 +2208,8 @@ export const response = {
           writer: "Benjamin Franklin",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-plan-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: ["Create a step-by-step plan", "Identify your support system"],
       },
       {
@@ -2103,7 +2223,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-plan-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: [
           "List your available resources",
           "Connect with supportive people",
@@ -2121,7 +2242,8 @@ export const response = {
           writer: "Confucius",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-plan-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: [
           "Visualize handling the situation well",
           "Practice your response",
@@ -2138,7 +2260,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-plan-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=HLm61p-VwIs&list=RDHLm61p-VwIs&start_radio=1",
         todo: ["Create backup options", "Feel secure in your preparation"],
       },
       {
@@ -2152,7 +2275,8 @@ export const response = {
           writer: "Walt Disney",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-plan-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Take a small practice step", "Build confidence gradually"],
       },
     ],
@@ -2169,7 +2293,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-reframe-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Question your fearful thoughts",
           "Create a more empowering story",
@@ -2187,7 +2312,8 @@ export const response = {
           writer: "Helen Keller",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-reframe-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["List positive possibilities", "Visualize successful outcomes"],
       },
       {
@@ -2201,7 +2327,8 @@ export const response = {
           writer: "Dan Zadra",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-reframe-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Question worst-case scenarios", "Focus on realistic outcomes"],
       },
       {
@@ -2215,7 +2342,8 @@ export const response = {
           writer: "Albert Einstein",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-reframe-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Identify what you could learn",
           "Embrace the growth opportunity",
@@ -2233,7 +2361,8 @@ export const response = {
           writer: "Fritz Perls",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-reframe-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Relabel fear as excitement", "Focus on the adventure"],
       },
     ],
@@ -2249,7 +2378,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-connect-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: ["Talk to a trusted friend", "Share your fears openly"],
       },
       {
@@ -2264,7 +2394,8 @@ export const response = {
           writer: "Ernest Hemingway",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-connect-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Ev8FCJ9U0YE&list=RDEv8FCJ9U0YE&start_radio=1",
         todo: [
           "Seek advice from someone experienced",
           "Learn from others' journeys",
@@ -2281,7 +2412,8 @@ export const response = {
           writer: "Helen Keller",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-connect-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=dQ-UpV3dYMo&list=RDdQ-UpV3dYMo&start_radio=1",
         todo: ["Identify your support system", "Reach out for encouragement"],
       },
       {
@@ -2295,7 +2427,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-connect-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=dQ-UpV3dYMo&list=RDdQ-UpV3dYMo&start_radio=1",
         todo: ["Connect with positive people", "Ask for encouragement"],
       },
       {
@@ -2310,7 +2443,8 @@ export const response = {
           writer: "African Proverb",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-connect-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=dQ-UpV3dYMo&list=RDdQ-UpV3dYMo&start_radio=1",
         todo: ["Invite someone to support you", "Accept help when offered"],
       },
     ],
@@ -2327,7 +2461,8 @@ export const response = {
           writer: "Robert Collier",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-celebrate-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=dQ-UpV3dYMo&list=RDdQ-UpV3dYMo&start_radio=1",
         todo: [
           "Acknowledge your brave moments",
           "Celebrate progress over perfection",
@@ -2344,7 +2479,8 @@ export const response = {
           writer: "Ruth Gordon",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-celebrate-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=dQ-UpV3dYMo&list=RDdQ-UpV3dYMo&start_radio=1",
         todo: [
           "Notice your growing courage",
           "Take progressively braver actions",
@@ -2361,7 +2497,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-celebrate-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=dQ-UpV3dYMo&list=RDdQ-UpV3dYMo&start_radio=1",
         todo: ["Reflect on your personal growth", "Honor your transformation"],
       },
       {
@@ -2375,7 +2512,8 @@ export const response = {
           writer: "Friedrich Nietzsche",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-celebrate-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=dQ-UpV3dYMo&list=RDdQ-UpV3dYMo&start_radio=1",
         todo: ["Trust your growing wisdom", "Embrace your resilience"],
       },
       {
@@ -2389,7 +2527,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/scared-song-celebrate-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=dQ-UpV3dYMo&list=RDdQ-UpV3dYMo&start_radio=1",
         todo: ["Share your courage story", "Be an example for others"],
       },
     ],
@@ -2408,7 +2547,8 @@ export const response = {
           writer: "Dalai Lama",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=mzX0rhF8buo&list=RDmzX0rhF8buo&start_radio=1",
         todo: [
           "Share your joy with someone",
           "Take a photo to remember this feeling",
@@ -2425,7 +2565,8 @@ export const response = {
           writer: "E.E. Cummings",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=mzX0rhF8buo&list=RDmzX0rhF8buo&start_radio=1",
         todo: ["Compliment a stranger", "Do something kind for someone"],
       },
       {
@@ -2440,7 +2581,8 @@ export const response = {
           writer: "Mahatma Gandhi",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-1-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=mzX0rhF8buo&list=RDmzX0rhF8buo&start_radio=1",
         todo: ["Dance freely", "Smile at everyone you meet"],
       },
       {
@@ -2454,7 +2596,8 @@ export const response = {
           writer: "Albert Schweitzer",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-1-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=mzX0rhF8buo&list=RDmzX0rhF8buo&start_radio=1",
         todo: ["Tell someone you love them", "Leave positive notes for others"],
       },
       {
@@ -2468,7 +2611,8 @@ export const response = {
           writer: "Omar Khayyam",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-1-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=mzX0rhF8buo&list=RDmzX0rhF8buo&start_radio=1",
         todo: ["Create a happiness memory", "Write a gratitude letter"],
       },
     ],
@@ -2484,7 +2628,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=mzX0rhF8buo&list=RDmzX0rhF8buo&start_radio=1",
         todo: ["Dance to your favorite song", "Sing out loud"],
       },
       {
@@ -2499,7 +2644,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=mzX0rhF8buo&list=RDmzX0rhF8buo&start_radio=1",
         todo: ["Start a gratitude journal", "Take a mental snapshot"],
       },
       {
@@ -2513,7 +2659,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-3-v3",
+        songUrl:
+          "https://www.youtube.com/watch?v=mzX0rhF8buo&list=RDmzX0rhF8buo&start_radio=1",
         todo: ["Move your body freely", "Express yourself through movement"],
       },
       {
@@ -2528,7 +2675,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-3-v4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: ["Write about this moment", "Create a happiness jar"],
       },
       {
@@ -2544,7 +2692,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-3-v5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: ["Celebrate small wins", "Appreciate being alive"],
       },
     ],
@@ -2560,7 +2709,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-gratitude-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: [
           "List 10 things you're grateful for",
           "Thank someone who matters to you",
@@ -2578,7 +2728,8 @@ export const response = {
           writer: "Henry Ward Beecher",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-gratitude-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: [
           "Notice small daily miracles",
           "Appreciate your health and abilities",
@@ -2595,7 +2746,8 @@ export const response = {
           writer: "Dietrich Bonhoeffer",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-gratitude-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: [
           "Express thanks to unexpected people",
           "Appreciate simple pleasures",
@@ -2613,7 +2765,8 @@ export const response = {
           writer: "Charles Dickens",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-gratitude-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: [
           "Focus on what you have, not what you lack",
           "Create a gratitude ritual",
@@ -2632,7 +2785,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-gratitude-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: [
           "Appreciate your growth and resilience",
           "Thank your past self for persevering",
@@ -2652,7 +2806,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-memory-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: ["Take photos with loved ones", "Write about this happy moment"],
       },
       {
@@ -2667,7 +2822,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-memory-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: [
           "Start a happiness scrapbook",
           "Record a voice memo of your joy",
@@ -2685,7 +2841,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-memory-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: [
           "Describe your feelings in detail",
           "Create an artwork of this moment",
@@ -2703,7 +2860,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-memory-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Jey547kXXP8&list=RDJey547kXXP8&start_radio=1",
         todo: [
           "Create a mental happiness vault",
           "Promise to remember this feeling",
@@ -2722,7 +2880,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-memory-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Integrate this joy into your identity",
           "Let happiness define your narrative",
@@ -2740,7 +2899,8 @@ export const response = {
           writer: "Maya Angelou",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-energy-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Smile at strangers",
           "Bring positive energy to every interaction",
@@ -2756,7 +2916,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-energy-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: ["Share your happiness story", "Encourage others to find joy"],
       },
       {
@@ -2771,7 +2932,8 @@ export const response = {
           writer: "Walt Whitman",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-energy-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: ["Be a source of light for others", "Share uplifting content"],
       },
       {
@@ -2784,7 +2946,8 @@ export const response = {
           writer: "James Keller",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-energy-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Compliment others genuinely",
           "Help someone achieve their happiness",
@@ -2800,7 +2963,8 @@ export const response = {
           writer: "Unknown",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-energy-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: ["Do random acts of kindness", "Spread joy wherever you go"],
       },
     ],
@@ -2818,7 +2982,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-present-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: ["Focus on your five senses", "Breathe deeply and feel alive"],
       },
       {
@@ -2834,7 +2999,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-present-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: ["Practice mindful awareness", "Savor each sensation of joy"],
       },
       {
@@ -2849,7 +3015,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-present-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Feel happiness in your body",
           "Let joy permeate your entire being",
@@ -2868,7 +3035,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-present-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: ["Choose to be fully present", "Embrace this exact moment"],
       },
       {
@@ -2884,7 +3052,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-present-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Acknowledge the uniqueness of this moment",
           "Give this happiness your full attention",
@@ -2904,7 +3073,8 @@ export const response = {
           writer: "Jim Rohn",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-cultivate-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Identify what created this happiness",
           "Plan to do more of what brings you joy",
@@ -2922,7 +3092,8 @@ export const response = {
           writer: "William Penn",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-cultivate-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Create a daily joy practice",
           "Schedule regular happiness activities",
@@ -2940,7 +3111,8 @@ export const response = {
           writer: "Marcus Aurelius",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-cultivate-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Align your life with what makes you happy",
           "Make joy a priority",
@@ -2957,7 +3129,8 @@ export const response = {
           writer: "Dalai Lama",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-cultivate-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Invest in activities that bring joy",
           "Prioritize your happiness",
@@ -2975,7 +3148,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-cultivate-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Set boundaries to protect your joy",
           "Choose happiness-supporting environments",
@@ -2994,7 +3168,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-transform-1",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Let happiness reshape your perspective",
           "Embrace the person joy is making you",
@@ -3013,7 +3188,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/355887/pexels-photo-355887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-transform-2",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Notice how happiness changes your outlook",
           "Use joy as fuel for personal growth",
@@ -3031,7 +3207,8 @@ export const response = {
           writer: "George Sand",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-transform-3",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Embrace your joyful identity",
           "Let happiness define who you are",
@@ -3048,7 +3225,8 @@ export const response = {
           writer: "Abraham Lincoln",
         },
         bgCode: getBg(),
-        songUrl: "https://example.com/happy-song-transform-4",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Embody happiness in every action",
           "Become a living expression of joy",
@@ -3067,7 +3245,8 @@ export const response = {
         },
         bgCode:
           "https://images.pexels.com/photos/7728811/pexels-photo-7728811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        songUrl: "https://example.com/happy-song-transform-5",
+        songUrl:
+          "https://www.youtube.com/watch?v=Soa3gO7tL-c&list=RDSoa3gO7tL-c&start_radio=1",
         todo: [
           "Align your whole being with joy",
           "Let happiness flow through all you do",
