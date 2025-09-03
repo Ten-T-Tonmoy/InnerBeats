@@ -3,6 +3,7 @@ import hero2 from "../../assets/hero2.png";
 import Analytics from "./Analytics";
 
 const Bottom = () => {
+  
   return (
     <>
       <div>

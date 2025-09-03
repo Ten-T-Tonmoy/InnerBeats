@@ -1,8 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Analytics = () => {
   const userCountRef = useRef(null);
   const volunteerCountRef = useRef(null);
+  const [reloadCount, setReloadCount] = useState(() => {
+    const stored = sessionStorage.getItem("reloadCount");
+    const next = stored ? parseInt(stored, 10) + 1 : 0;
+    sessionStorage.setItem("reloadCount", next);
+    return next;
+  });
 
   useEffect(() => {
     fetch("http://localhost:3000/api/visitors/totalcount")
@@ -23,7 +29,6 @@ const Analytics = () => {
       })
       .catch((err) => console.error(err));
   }, []);
-
   return (
     <div className="grid grid-cols-2 gap-6 p-6">
       <div

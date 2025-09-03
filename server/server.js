@@ -19,7 +19,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const PORT = process.env.PORT || 3000;
 
-app.use(viewerCount);
 app.get("/test", (req, res) => {
   res.status(200).json({
     success: "Backend is live",
@@ -40,7 +39,7 @@ app.get("/api/visitors/totalcount", async (req, res) => {
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
-app.post("/api/viewing", siteVisited);
+// app.post("/api/viewing", viewerCount, siteVisited);
 
 app.listen(PORT, () => {
   console.log(`Server Running on port : ${PORT}`);

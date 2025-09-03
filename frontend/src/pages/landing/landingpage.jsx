@@ -66,15 +66,6 @@ export default function page() {
     }
   };
 
-  useEffect(() => {
-    if (!sessionStorage.getItem("viewed")) {
-      fetch("http://localhost:3000/api/viewing", { method: "POST" }).catch(
-        (err) => console.error(err)
-      );
-      sessionStorage.setItem("viewed", "true");
-    }
-  }, []);
-
   return (
     <div className="bg-primary flex flex-col items-center pt-20">
       {openPop && (
@@ -194,15 +185,14 @@ const PopUp = ({
   setResponse,
   setReasonSend,
   handleAddToHistory,
-}) => {
-  // Fixed the onClick handler for reason selection
+}) => { 
   const handleReasonClick = async (reason, idx) => {
     try {
       const newResponse = getResult({ emotion, reasonIdx: idx });
       setResponse(newResponse);
       setReasonSend(reason);
 
-      // Call handleAddToHistory with the current emotion and selected reason
+      
       await handleAddToHistory(emotion, reason);
     } catch (error) {
       console.error("Error handling reason click:", error);
